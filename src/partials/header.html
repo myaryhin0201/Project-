@@ -1,6 +1,48 @@
 <header class="header">
-  <div class="container">
-    <nav class="header__nav">home</nav>
-    <div class="header__title">ice cream made with passion</div>
+  <div class="container header__flexbox">
+    <a href="#" class="logo"> <img src="./images/logo.png" alt="logo" /></a>
+    <button type="button" class="header__button" data-menu-button>
+      <svg
+        class="header__menu-icons"
+        width="20"
+        height="12"
+        aria-label="Переключатель меню"
+        aria-controls="nav-wrap"
+        aria-expanded="false"
+        role="img"
+      >
+        <use
+          class="header__icon-close"
+          href="./images/icons/sprite.svg#icon-close"
+        ></use>
+        <use
+          class="header__icon-burger"
+          href="./images/icons/sprite.svg#icon-burger"
+        ></use>
+      </svg>
+    </button>
+    <div class="nav-wrap" id="nav-wrap" data-menu>
+      <nav class="nav">
+        <button type="button" class="nav__button">Buy Now</button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#aboutus" class="nav__link link">About us</a>
+          </li>
+          <li class="nav__item">
+            <a href="#howitsmade" class="nav__link link">How it's made?</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__link link">Our products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- <div class="header__title">ice cream made with passion</div> -->
   </div>
 </header>
