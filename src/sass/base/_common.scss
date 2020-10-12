@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+textarea {
+  resize: none;
+}
