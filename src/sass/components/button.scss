@@ -1,0 +1,23 @@
+.button {
+  @include font(8px, 400, $white-color, 1.25);
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  padding: 10px 12px;
+  font-family: inherit;
+  border-radius: 20px;
+  @include bordered(0, none, transparent, 20px);
+  @include trans(background, $main-color);
+  &:hover,
+  &:focus {
+    @include trans(background, $hover-btnred);
+  }
+  &--white {
+    color: $main-color;
+    @include trans(background, $white-color);
+    &:hover,
+    &:focus {
+      @include trans(background, $hover-btn);
+    }
+  }
+}

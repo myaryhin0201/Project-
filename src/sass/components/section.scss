@@ -1,29 +1,16 @@
 .section {
-  padding: 60px 0;
-  // @include for-size(desktop) {
-  // 	padding: 94px 0;
-  // }
-  // &--features {
-  // 	@include for-size(desktop) {
-  // 		padding-bottom: 0;
-  // 	}
-  // }
-  // &--team {
-  // 	background-color: $lightgray-color;
-  // }
-  // &--work {
-  // 	@include for-size(todesktop) {
-  // 		display: none;
-  // 	}
-  // }
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 .section__title {
   margin-bottom: 30px;
-  // @include font(28px, 700, inherit, 0.03em, 1.18);
-  // text-align: center;
-  // @include for-size(desktop) {
-  // 	margin-bottom: 50px;
-  // 	font-size: 36px;
-  // 	line-height: 1.17;
-  // }
+  font-family: 'Titan One';
+  @include font(34px, 400, $main-color, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.section__desc {
+  font-family: 'Titan One';
+  @include font(18px, 400, $second-color, 1.17);
+  text-transform: uppercase;
 }
