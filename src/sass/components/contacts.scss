@@ -1,26 +1,107 @@
-.contacts__button {
+
+
+.contacts__column:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__item {
+  padding: 43px 20px;
+  background-color:white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+// Address
+
+.contacts-address {
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 25px;
+}
+
+.contacts-address__title {
+  background-color: $coffee;
+  @include font(12px, 500, $white-color, 1.86);
+  @include flex(flex, center);
+  margin-bottom: 25px;
+  border-radius: 4px;
+  width: 80px;
+}
+
+.contacts-address__title--green {
+  background-color: $milkshake;
+  width: 130px;
+}
+
+.contacts-address__city {
+  @include font(12px, 500, $text-color, 1.86);
+  margin-bottom: 10px;
+}
+
+.contacts-address__text {
+  @include font(12px, 500, $second-text-color, 1.86);
+}
+
+// Work 
+
+.contacts-work {
+  border-bottom: 1px solid #E1E1E1; 
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.contact-work__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts-work__days {
+  @include font(12px, 500, $text-color, 1.86);
+}
+
+.contacts-work__time {
+  @include font(12px, 500, $second-color, 1.86);
+}
+
+// Contact 
+.contacts-contact {
+  padding-top: 25px;
+}
+
+.contacts-contact__link {
+  @include font(12px, 500, $second-text-color, 1.5);
+}
+
+
+// Button
+
+.contacts-block {
+  margin-top: 54px;
+}
+
+
+.contacts-block__button {
   @include flex(flex, center, center);
   @extend .button;
   @include font(16px, 700, $white-color, 1.31);
-  padding: 15px 17px;
+  padding: 12px 17px;
   margin: 0 auto;
   width: 160px;
   margin-bottom: 20px;
   border-radius: 22px;
 }
 
-.contacts__button--white {
+.contacts-block__button--white {
   @extend .button;
   @extend .button--white;
   @include font(16px, 700, $main-color, 1.31);
   margin: 0 auto;
-  padding: 15px 32px;
+  padding: 12px 32px;
 }
 
-.contacts__icon {
+.contacts-block__icon {
   margin-left: 8px;
+  fill: $white-color;
 }
 
-.contacts__icon__white {
-  fill: $white-color;
+.contacts-block__icon--white {
+  margin-left: 8px;
+  fill: $main-color;
 }
