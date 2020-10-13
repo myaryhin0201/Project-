@@ -1,72 +1,189 @@
+.section--contacts {
+  background-color: $bg-color;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.contacts {
+  position: relative;
+  @include for-size(mobile-tablet) {
+    bottom: 84px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 
+  @include for-size(tablet-only) {
+    bottom: 78px;
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+}
+
+.contacts__row {
+  @include for-size(tablet) {
+  @include flex(flex, center, center);
+  }
+}
 .contacts__column:not(:last-child) {
-  margin-bottom: 20px;
+  @include for-size(mobile-tablet) {
+   margin-bottom: 20px;
+  }
+  
 }
 
 .contacts__item {
-  padding: 43px 20px;
-  background-color:white;
+  background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  @include for-size(mobile-tablet) {
+    padding: 43px 20px;
+  }
+
+  @include for-size(tablet-only) {
+    width: 220px;
+    padding: 50px 20px;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+   
+  }
 }
 
 // Address
 
 .contacts-address {
   border-bottom: 1px solid #E1E1E1;
-  padding-bottom: 25px;
+  @include for-size(mobile-tablet){
+    padding-bottom: 25px;
+  }
+
+  @include for-size(tablet-only) {
+    padding-bottom: 30px;
+  }
+  
 }
 
 .contacts-address__title {
   background-color: $coffee;
-  @include font(12px, 500, $white-color, 1.86);
-  @include flex(flex, center);
-  margin-bottom: 25px;
   border-radius: 4px;
-  width: 80px;
+  @include for-size(mobile-tablet){
+    @include font(12px, 500, $white-color, 1.86);
+    @include flex(flex, center);
+    margin-bottom: 25px;
+    width: 80px;  
+  }
+  
+  @include for-size(tablet-only) {
+    @include font(16px, 500, $white-color, 1.86);
+    @include flex(flex, center);
+    margin-bottom: 30px;
+    width: 73px;
+  }
 }
 
 .contacts-address__title--green {
   background-color: $milkshake;
-  width: 130px;
+  @include for-size(mobile-only) {
+    width: 130px;
+  }
+
+  @include for-size(tablet){
+    width: 138px;
+  }
 }
 
 .contacts-address__city {
-  @include font(12px, 500, $text-color, 1.86);
-  margin-bottom: 10px;
+  @include for-size(mobile-tablet) {
+    @include font(12px, 500, $text-color, 1.86);
+    margin-bottom: 10px;
+  }
+
+  @include for-size(tablet-only) {
+    @include font(14px, 500, $text-color, 1.86);
+    margin-bottom: 30px;
+  }
 }
+ 
 
 .contacts-address__text {
-  @include font(12px, 500, $second-text-color, 1.86);
+  @include for-size(mobile-tablet) {
+    @include font(12px, 500, $second-text-color, 1.86);
+  }
+
+  @include for-size(tablet-only) {
+    @include font(14px, 500, $second-text-color, 1.86);
+  }
 }
 
 // Work 
 
 .contacts-work {
   border-bottom: 1px solid #E1E1E1; 
-  padding-top: 25px;
-  padding-bottom: 25px;
+  @include for-size(mobile-tablet){
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @include for-size(tablet-only) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+ 
 }
 .contact-work__item:not(:last-child) {
-  margin-bottom: 10px;
+  @include for-size(mobile-tablet) {
+    margin-bottom: 10px;
+  }
+  
+  @include for-size(tablet-only) {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts-work__days {
-  @include font(12px, 500, $text-color, 1.86);
+  @include for-size(mobile-tablet) {
+    @include font(12px, 500, $text-color, 1.83);
+  }
+
+  @include for-size(tablet-only) {
+    @include font(14px, 500, $text-color, 1.83);
+  }
+  
 }
 
 .contacts-work__time {
-  @include font(12px, 500, $second-color, 1.86);
+  @include for-size(mobile-tablet) {
+    @include font(12px, 500, $second-color, 1.83);
+  }
+
+  @include for-size(tablet-only) {
+    @include font(14px, 500, $second-color, 1.83);
+  }
+  
 }
 
 // Contact 
-.contacts-contact {
-  padding-top: 25px;
+.contacts-contact { 
+  @include for-size(mobile-tablet) {
+    padding-top: 25px;
+  }
+
+  @include for-size(tablet-only) {
+    padding-top: 30px;
+  }
 }
 
 .contacts-contact__link {
-  @include font(12px, 500, $second-text-color, 1.5);
+  @include for-size(mobile-tablet){
+    @include font(12px, 500, $second-text-color, 1.5);
+  }
+  
+  @include for-size(tablet-only){
+    @include font(14px, 500, $second-text-color, 1.83);
+  }
 }
 
 
