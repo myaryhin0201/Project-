@@ -1,8 +1,4 @@
-
-
-
-
-.cards__button {
+.contacts__button {
   @include flex(flex, center, center);
   @extend .button;
   @include font(16px, 700, $white-color, 1.31);
@@ -13,7 +9,7 @@
   border-radius: 22px;
 }
 
-.cards__button--white {
+.contacts__button--white {
   @extend .button;
   @extend .button--white;
   @include font(16px, 700, $main-color, 1.31);
@@ -21,10 +17,10 @@
   padding: 15px 32px;
 }
 
-.cards__icon {
-    margin-left: 8px;
+.contacts__icon {
+  margin-left: 8px;
 }
 
-.cards__icon__white {
-    fill: $white-color;
+.contacts__icon__white {
+  fill: $white-color;
 }
