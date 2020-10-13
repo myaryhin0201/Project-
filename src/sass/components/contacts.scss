@@ -1,4 +1,13 @@
+.section--contacts {
+  background-color: $bg-color;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.contacts {
+  position: relative;
+  bottom: 84px;
+}
 
 .contacts__column:not(:last-child) {
   margin-bottom: 20px;
