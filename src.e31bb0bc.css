@@ -9,7 +9,6 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 html,
@@ -489,6 +488,7 @@ svg {
 .header {
   height: 500px;
   background-color: #ffb8ca;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -503,7 +503,6 @@ svg {
 
 .header__container {
   position: relative;
-  overflow-x: hidden;
   background-image: url("/ice-cream.91bc8953.png"), url("/pink-circle-mobile.df739923.svg");
   background-repeat: no-repeat;
   background-position: right 32px bottom, right bottom 75px;
