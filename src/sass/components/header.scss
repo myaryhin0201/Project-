@@ -21,6 +21,7 @@
   margin: 0;
   padding: 10px;
   border: 0;
+  z-index: 99;
   background-color: transparent;
   & .header__icon-close {
     @include trans(opacity, 0);
@@ -46,8 +47,8 @@
 .nav-wrap {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: calc(100% - 70px);
   height: 100%;
   padding-top: 75px;
   background-color: $menu;
