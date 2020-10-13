@@ -37,10 +37,10 @@
 }
 .header__icon-close,
 .header__icon-burger {
-  @include trans(fill, $main-color);
+  @include trans(stroke, $main-color);
   .header__button:hover &,
   .header__button:focus & {
-    @include trans(fill, $white-color);
+    @include trans(stroke, $white-color);
   }
 }
 .nav-wrap {
