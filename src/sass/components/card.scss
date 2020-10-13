@@ -1,0 +1,9 @@
+.cards__button {
+  @extend .button;
+  @extend .button--white;
+//   display: block;
+//   @include font(16px, 700, $main-color, 1.31);
+//   padding: 15px 60px;
+//   margin: 0 auto;
+//   margin-bottom: 20px;
+}
