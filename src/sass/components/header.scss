@@ -1,10 +1,72 @@
 .header {
   height: 500px;
   background-color: $ice-cream;
+
+  @include for-size(tablet) {
+    height: 400px;
+  }
+  @include for-size(desktop) {
+    height: 666px;
+  }
 }
 .header__container {
   position: relative;
   overflow-x: hidden;
+  background-image: url('../images/mobile/header/ice-cream.png'),
+    url('../images/icons/pink-circle-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right 32px bottom, right bottom 75px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/header/ice-cream@2x.png'),
+      url('../images/icons/pink-circle-mobile.svg');
+    background-size: 171px 410px, auto auto;
+  }
+
+  @include for-size(tablet) {
+    background-image: url('../images/tablet/header/milk.png'),
+      url('../images/tablet/header/ice-cream.png'),
+      url('../images/tablet/header/girl.png'),
+      url('../images/icons/pink-circle-tablet.svg');
+    background-position: left 34px bottom 28px, right 247px bottom,
+      right 34px bottom, right 137px bottom 46px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/header/milk@2x.png'),
+        url('../images/tablet/header/ice-cream@2x.png'),
+        url('../images/tablet/header/girl@2x.png'),
+        url('../images/icons/pink-circle-tablet.svg');
+      background-size: 124px 126px, 143px 336px, 168px 133px, auto auto;
+    }
+  }
+  @include for-size(desktop) {
+    background-image: url('../images/desktop/header/milk.png'),
+      url('../images/desktop/header/ice-cream.png'),
+      url('../images/desktop/header/girl.png'),
+      url('../images/icons/pink-circle-desktop.svg');
+    background-position: left 77px bottom 45px, right 450px bottom,
+      right 109px bottom, right 267px bottom 75px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/header/milk@2x.png'),
+        url('../images/desktop/header/ice-cream@2x.png'),
+        url('../images/desktop/header/girl@2x.png'),
+        url('../images/icons/pink-circle-desktop.svg');
+      background-size: 188px 191px, 236px 557px, 293px 232px, auto auto;
+    }
+  }
 }
 .header__flexbox {
   padding-bottom: 25px;
