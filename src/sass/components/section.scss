@@ -8,6 +8,9 @@
   @include font(34px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  &--hero {
+    margin-bottom: 20px;
+  }
 }
 .section__desc {
   font-family: 'Titan One';
