@@ -3,7 +3,7 @@
   cursor: pointer;
   outline: none;
   text-align: center;
-  padding: 10px 12px;
+  padding: 10px 15px;
   font-family: inherit;
   border-radius: 20px;
   @include bordered(0, none, transparent, 20px);
@@ -13,6 +13,7 @@
     @include trans(background, $hover-btnred);
   }
   &--white {
+    @extend .button;
     color: $main-color;
     @include trans(background, $white-color);
     &:hover,
