@@ -12,10 +12,15 @@
 }
 
 .contacts__row {
-
+  @include for-size(tablet) {
+  @include flex(flex, center, center);
+  }
 }
 .contacts__column:not(:last-child) {
-  margin-bottom: 20px;
+  @include for-size(mobile-tablet) {
+   margin-bottom: 20px;
+  }
+  
 }
 
 .contacts__item {
