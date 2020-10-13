@@ -4,6 +4,7 @@
 }
 .header__container {
   position: relative;
+  overflow-x: hidden;
 }
 .header__flexbox {
   padding-bottom: 25px;
@@ -50,18 +51,16 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 0;
+  width: 250px;
   height: 100%;
   padding-top: 85px;
   background-color: $menu;
   z-index: 2;
   pointer-events: none;
-  overflow-x: hidden;
   @include trans(opacity, 0);
   @include trans(visibility, hidden);
   @include trans(transform, translateX(100%));
   &.is-open {
-    width: 250px;
     pointer-events: initial;
     @include trans(opacity, 1);
     @include trans(visibility, visible);
