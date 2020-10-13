@@ -535,14 +535,14 @@ svg {
 
 .header__icon-close,
 .header__icon-burger {
-  fill: #d41443;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: #d41443;
+  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__button:hover .header__icon-close, .header__button:focus .header__icon-close,
 .header__button:hover .header__icon-burger,
 .header__button:focus .header__icon-burger {
-  fill: #ffffff;
-  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: #ffffff;
+  transition: stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-wrap {
