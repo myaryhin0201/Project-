@@ -21,14 +21,13 @@
 
 .contacts__row {
   @include for-size(tablet) {
-  @include flex(flex, center, center);
+    @include flex(flex, center, center);
   }
 }
 .contacts__column:not(:last-child) {
   @include for-size(mobile-tablet) {
-   margin-bottom: 20px;
+    margin-bottom: 20px;
   }
-  
 }
 
 .contacts__item {
@@ -46,36 +45,34 @@
     margin-right: 20px;
 
     &:nth-child(3n) {
-        margin-right: 0;
+      margin-right: 0;
     }
-   
   }
 }
 
 // Address
 
 .contacts-address {
-  border-bottom: 1px solid #E1E1E1;
-  @include for-size(mobile-tablet){
+  border-bottom: 1px solid #e1e1e1;
+  @include for-size(mobile-tablet) {
     padding-bottom: 25px;
   }
 
   @include for-size(tablet-only) {
     padding-bottom: 30px;
   }
-  
 }
 
 .contacts-address__title {
   background-color: $coffee;
   border-radius: 4px;
-  @include for-size(mobile-tablet){
+  @include for-size(mobile-tablet) {
     @include font(12px, 500, $white-color, 1.86);
     @include flex(flex, center);
     margin-bottom: 25px;
-    width: 80px;  
+    width: 80px;
   }
-  
+
   @include for-size(tablet-only) {
     @include font(16px, 500, $white-color, 1.86);
     @include flex(flex, center);
@@ -90,7 +87,7 @@
     width: 130px;
   }
 
-  @include for-size(tablet){
+  @include for-size(tablet) {
     width: 138px;
   }
 }
@@ -106,7 +103,6 @@
     margin-bottom: 30px;
   }
 }
- 
 
 .contacts-address__text {
   @include for-size(mobile-tablet) {
@@ -118,11 +114,11 @@
   }
 }
 
-// Work 
+// Work
 
 .contacts-work {
-  border-bottom: 1px solid #E1E1E1; 
-  @include for-size(mobile-tablet){
+  border-bottom: 1px solid #e1e1e1;
+  @include for-size(mobile-tablet) {
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -131,13 +127,12 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
- 
 }
 .contact-work__item:not(:last-child) {
   @include for-size(mobile-tablet) {
     margin-bottom: 10px;
   }
-  
+
   @include for-size(tablet-only) {
     margin-bottom: 16px;
   }
@@ -151,7 +146,6 @@
   @include for-size(tablet-only) {
     @include font(14px, 500, $text-color, 1.83);
   }
-  
 }
 
 .contacts-work__time {
@@ -162,11 +156,10 @@
   @include for-size(tablet-only) {
     @include font(14px, 500, $second-color, 1.83);
   }
-  
 }
 
-// Contact 
-.contacts-contact { 
+// Contact
+.contacts-contact {
   @include for-size(mobile-tablet) {
     padding-top: 25px;
   }
@@ -177,22 +170,20 @@
 }
 
 .contacts-contact__link {
-  @include for-size(mobile-tablet){
+  @include for-size(mobile-tablet) {
     @include font(12px, 500, $second-text-color, 1.5);
   }
-  
-  @include for-size(tablet-only){
+
+  @include for-size(tablet-only) {
     @include font(14px, 500, $second-text-color, 1.83);
   }
 }
-
 
 // Button
 
 .contacts-block {
   margin-top: 54px;
 }
-
 
 .contacts-block__button {
   @include flex(flex, center, center);
