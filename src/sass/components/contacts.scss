@@ -1,7 +1,7 @@
 .section--contacts {
   background-color: $bg-color;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 78px;
 }
 
 .contacts {
@@ -19,18 +19,25 @@
   }
 }
 
+
 .contacts__row {
   @include for-size(tablet) {
     @include flex(flex, center, center);
   }
 }
+
 .contacts__column:not(:last-child) {
   @include for-size(mobile-tablet) {
     margin-bottom: 20px;
   }
+
+  @include for-size(tablet-only) {
+    margin-right: 20px;
+  }
 }
 
 .contacts__item {
+  width: 220px;
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -40,13 +47,7 @@
   }
 
   @include for-size(tablet-only) {
-    width: 220px;
     padding: 50px 31px;
-    margin-right: 20px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
 }
 
