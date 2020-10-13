@@ -9,6 +9,7 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 html,
@@ -439,7 +440,7 @@ svg {
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 320px;
   }
@@ -486,9 +487,12 @@ svg {
 }
 
 .header {
-  position: relative;
   height: 500px;
   background-color: #ffb8ca;
+}
+
+.header__container {
+  position: relative;
 }
 
 .header__flexbox {
@@ -551,12 +555,13 @@ svg {
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - 70px);
+  width: 0;
   height: 100%;
-  padding-top: 75px;
+  padding-top: 85px;
   background-color: #e17992;
   z-index: 2;
   pointer-events: none;
+  overflow-x: hidden;
   opacity: 0;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   visibility: hidden;
@@ -565,6 +570,7 @@ svg {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-wrap.is-open {
+  width: 250px;
   pointer-events: initial;
   opacity: 1;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
