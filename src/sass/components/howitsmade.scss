@@ -1,0 +1,34 @@
+.howitsmade__title-number {
+  margin-bottom: 30px;
+  font-family: 'Titan One';
+  @include font(34px, 400, $main-color, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.howitsmade__text {
+  font-family: 'DM Sans';
+  @include font(12px, 500, $text-color, 1.62);
+}
+
+.howitsmade__text--grey {
+  color: $second-text-color;
+}
+
+.howitsmade__list-text {
+  font-family: 'DM Sans';
+  @include font(12px, 700, $text-color, 1.7);
+  margin-bottom: 38px;
+}
+
+.howitsmade__item::before {
+  content: '';
+  margin-bottom: 16px;
+  height: 50px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.howitsmade__item::before {
+  background-image: url(../images/icons/icon721.svg);
+}
