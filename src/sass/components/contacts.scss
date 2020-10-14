@@ -1,7 +1,7 @@
 .section--contacts {
   background-color: $bg-color;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 78px;
 }
 
 .contacts {
@@ -19,18 +19,25 @@
   }
 }
 
+
 .contacts__row {
   @include for-size(tablet) {
     @include flex(flex, center, center);
   }
 }
+
 .contacts__column:not(:last-child) {
   @include for-size(mobile-tablet) {
     margin-bottom: 20px;
   }
+
+  @include for-size(tablet-only) {
+    margin-right: 20px;
+  }
 }
 
 .contacts__item {
+  width: 220px;
   background-color: $white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -40,13 +47,7 @@
   }
 
   @include for-size(tablet-only) {
-    width: 220px;
-    padding: 50px 20px;
-    margin-right: 20px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    padding: 50px 31px;
   }
 }
 
@@ -182,34 +183,68 @@
 // Button
 
 .contacts-block {
-  margin-top: 54px;
+   margin-top: 54px;
+   @include for-size(tablet-only){
+   @include flex(flex, center, center);
+   margin-top: 81px;
+   }
+    
 }
 
-.contacts-block__button {
-  @include flex(flex, center, center);
+.contacts-block__button { 
+  @include flex(flex, row, center, center);
   @extend .button;
   @include font(16px, 700, $white-color, 1.31);
-  padding: 12px 17px;
-  margin: 0 auto;
-  width: 160px;
-  margin-bottom: 20px;
   border-radius: 22px;
+
+  @include for-size(mobile-tablet) {
+    padding: 12px 17px;
+    margin: 0 auto;
+    width: 160px;
+    margin-bottom: 10px;
+  }
+  
+  @include for-size(tablet-only) {
+    padding: 12px 32px;
+  }
+  
 }
 
 .contacts-block__button--white {
   @extend .button;
   @extend .button--white;
   @include font(16px, 700, $main-color, 1.31);
-  margin: 0 auto;
-  padding: 12px 32px;
+
+  @include for-size(mobile-tablet) {
+    margin: 0 auto;
+    padding: 12px 35px;
+  }
+  
+  @include for-size(tablet-only) {
+    margin-left: 15px;
+    padding: 12px 39px;
+  }
 }
 
 .contacts-block__icon {
-  margin-left: 8px;
   fill: $white-color;
+  @include for-size(mobile-tablet) {
+  margin-left: 8px;
+ }
+
+ @include for-size(tablet-only) {
+   margin-left: 14px;
+ }
 }
 
 .contacts-block__icon--white {
-  margin-left: 8px;
   fill: $main-color;
+
+   @include for-size(mobile-tablet) {
+  margin-left: 8px;
+ }
+
+ @include for-size(tablet-only) {
+   margin-left: 14px;
+ }
 }
