@@ -1,1 +1,31 @@
 // colors
+// белый главный цвет
+$white-color: #ffffff;
+// бардовый цвет
+$main-color: #d41443;
+// второстепенный цвет
+$second-color: #ffa5ba;
+// hover and focus для белой кнопки
+$hover-btn: #ecebeb;
+// hover and focus для бардовой кнопки
+$hover-btnred: #c7133e;
+// цвет меню
+$menu: #e17992;
+// цвет ли с мороженного
+$ice-cream: #ffb8ca;
+// цвет для кофе и кафе
+$coffee: #f0d1a5;
+// цвет для milkshakes and food truck
+$milkshake: #c2e297;
+// нежно розовый
+$bg-color: #fff5f6;
+// главный цвет текста
+$text-color: #000000;
+// второстепенный цвет текста
+$second-text-color: #907e82;
+// граница
+$border: #e18298;
+
+// functions
+// тайминг для transition
+$timing: cubic-bezier(0.4, 0, 0.2, 1);
