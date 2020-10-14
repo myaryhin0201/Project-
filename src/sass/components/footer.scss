@@ -1,0 +1,15 @@
+.footer {
+  padding-top: 113px;
+  padding-bottom: 186px;
+  background-color: $bg-color;
+
+  @include for-size(todesktop) {
+    text-align: left;
+  }
+}
+.social-list {
+  display: inline-block;
+}
+.footer-info {
+  text-align: right;
+}
