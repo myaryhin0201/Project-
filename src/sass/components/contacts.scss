@@ -1,14 +1,33 @@
 .section--contacts {
   background-color: $bg-color;
 
+  @include for-size(mobile-tablet) {
+    padding-top: 0;
+    padding-bottom: 29px;
+  }
+
   @include for-size (tablet-only) {
   padding-top: 0;
-  padding-bottom: 78px;
+  padding-bottom: 87px;
   }
 
   @include for-size(desktop) {
     padding-top: 0;
     padding-bottom: 63px; 
+
+    background-image: url('../images/desktop/contacts/sectionbg2 1.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/contacts/sectionbg2 1@2x.png');
+      }
+    
   }
 }
 
@@ -307,6 +326,7 @@
 }
 
 .contacts-block__icon {
+  fill: $main-color;
   stroke: $white-color;
   @include for-size(mobile-tablet) {
   margin-left: 8px;
@@ -318,6 +338,7 @@
 }
 
 .contacts-block__icon--white {
+  fill: $white-color;
   stroke: $main-color;
 
   @include for-size(mobile-tablet) {
