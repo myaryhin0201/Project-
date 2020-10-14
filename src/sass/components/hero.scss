@@ -1,6 +1,10 @@
 .hero {
-  height: calc(100% - 85px * 2);
   @include flex($direction: column, $ai: start);
+
+  @include for-size(mobile-tablet) {
+    height: calc(100% - 85px * 2);
+  }
+   
 }
 .hero__title {
   font-size: 48px;
@@ -59,4 +63,16 @@
 
 .hero-flex {
   @include flex($ai: baseline);
+}
+.hero__text {
+  width: 114px;
+  margin-bottom: 8px;
+  @include font(8px, 400, $white-color, 1.5);
+}
+.hero-info {
+    @include for-size(mobile-tablet) {
+    display: none;
+  }
+  margin-top: 60px;
+  margin-left: 134px;
 }
