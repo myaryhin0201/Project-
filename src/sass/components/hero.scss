@@ -5,14 +5,58 @@
 .hero__title {
   font-size: 48px;
   line-height: 0.96;
+  @include for-size(tablet) {
+    font-size: 34px;
+    line-height: 0.9;
+  }
 }
 .hero__desc {
   @include font(26px, 400, $white-color, 1.15);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  @include for-size(tablet) {
+    @include font(22px, 400, $white-color, 1.14);
+  }
 }
 .hero__button {
   &:not(:last-child) {
     margin-right: 10px;
   }
+}
+.hero-numbers {
+  @include for-size(mobile-tablet) {
+    display: none;
+  }
+  margin-left: 495px;
+}
+.hero-item {
+  position: relative;
+  text-align: right;
+  &:first-child {
+    margin-bottom: 14px;
+  }
+}
+.hero-item__number {
+  position: relative;
+  z-index: 2;
+  display: block;
+  font-family: 'Titan One';
+  @include font(28px, 400, $main-color, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-item__place {
+  display: block;
+  @include font(8px, 400, $white-color, 1.25);
+}
+.hero-item__icon {
+  position: absolute;
+  left: 34px;
+  top: -2px;
+  z-index: 1;
+}
+
+.hero-flex {
+  @include flex($ai: baseline);
 }
