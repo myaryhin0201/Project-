@@ -9,6 +9,7 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 html,
@@ -653,6 +654,9 @@ svg {
   padding-top: 120px;
   padding-bottom: 100px;
 }
+.section--feedback {
+  padding-bottom: 200px;
+}
 
 .section__title {
   margin-bottom: 30px;
@@ -705,8 +709,33 @@ svg {
 
 .section--contacts {
   background-color: #fff5f6;
-  padding-top: 0;
-  padding-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .section--contacts {
+    padding-top: 0;
+    padding-bottom: 29px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section--contacts {
+    padding-top: 0;
+    padding-bottom: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--contacts {
+    padding-top: 0;
+    padding-bottom: 63px;
+    background-image: url("/sectionbg2 1.fd43f126.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section--contacts {
+    background-image: url("/sectionbg2 1@2x.08c57c06.png");
+  }
 }
 
 .contacts {
@@ -722,8 +751,15 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     bottom: 78px;
-    padding-right: 21px;
-    padding-left: 21px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    bottom: 102px;
+    padding-right: 95px;
+    padding-left: 95px;
   }
 }
 
@@ -741,6 +777,16 @@ svg {
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__column:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__column:not(:last-child) {
+    margin-right: 31px;
+  }
+}
 
 .contacts__item {
   background-color: #ffffff;
@@ -755,11 +801,13 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item {
     width: 220px;
-    padding: 50px 20px;
-    margin-right: 20px;
+    padding: 50px 31px;
   }
-  .contacts__item:nth-child(3n) {
-    margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    width: 330px;
+    padding: 51px 44px 62px 43px;
   }
 }
 
@@ -774,6 +822,11 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-address {
     padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-address {
+    padding-bottom: 32px;
   }
 }
 
@@ -809,6 +862,20 @@ svg {
     width: 73px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-address__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.86;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 73px;
+  }
+}
 
 .contacts-address__title--green {
   background-color: #c2e297;
@@ -834,7 +901,16 @@ svg {
     font-weight: 500;
     color: #000000;
     line-height: 1.86;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-address__city {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.86;
+    margin-bottom: 10px;
   }
 }
 
@@ -852,6 +928,14 @@ svg {
     font-weight: 500;
     color: #907e82;
     line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-address__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #907e82;
+    line-height: 1.83;
   }
 }
 
@@ -870,6 +954,12 @@ svg {
     padding-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-work {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contact-work__item:not(:last-child) {
@@ -881,13 +971,18 @@ svg {
     margin-bottom: 16px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-work__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .contacts-work__days {
     font-size: 12px;
     font-weight: 500;
     color: #000000;
-    line-height: 1.83;
+    line-height: 1.86;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -895,7 +990,15 @@ svg {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    line-height: 1.83;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-work__days {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.86;
   }
 }
 
@@ -910,6 +1013,14 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-work__time {
     font-size: 14px;
+    font-weight: 500;
+    color: #ffa5ba;
+    line-height: 1.83;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-work__time {
+    font-size: 16px;
     font-weight: 500;
     color: #ffa5ba;
     line-height: 1.83;
@@ -924,6 +1035,11 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-contact {
     padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-contact {
+    padding-top: 32px;
   }
 }
 
@@ -943,25 +1059,65 @@ svg {
     line-height: 1.83;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-contact__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #907e82;
+    line-height: 1.83;
+  }
+}
 
 .contacts-block {
   margin-top: 54px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-block {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 81px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-block {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 86px;
+  }
+}
 
 .contacts-block__button {
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.31;
-  padding: 12px 17px;
-  margin: 0 auto;
-  width: 160px;
-  margin-bottom: 20px;
   border-radius: 22px;
+}
+@media screen and (max-width: 767px) {
+  .contacts-block__button {
+    padding: 12px 17px;
+    margin: 0 auto;
+    width: 160px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-block__button {
+    padding: 12px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-block__button {
+    padding: 12px 35px;
+  }
 }
 
 .contacts-block__button--white {
@@ -969,18 +1125,48 @@ svg {
   font-weight: 700;
   color: #d41443;
   line-height: 1.31;
-  margin: 0 auto;
-  padding: 12px 32px;
+}
+@media screen and (max-width: 767px) {
+  .contacts-block__button--white {
+    margin: 0 auto;
+    padding: 12px 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-block__button--white {
+    margin-left: 15px;
+    padding: 12px 39px;
+  }
 }
 
 .contacts-block__icon {
-  margin-left: 8px;
-  fill: #ffffff;
+  fill: #d41443;
+  stroke: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .contacts-block__icon {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-block__icon {
+    margin-left: 14px;
+  }
 }
 
 .contacts-block__icon--white {
-  margin-left: 8px;
-  fill: #d41443;
+  fill: #ffffff;
+  stroke: #d41443;
+}
+@media screen and (max-width: 767px) {
+  .contacts-block__icon--white {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-block__icon--white {
+    margin-left: 14px;
+  }
 }
 
 .copyright {
