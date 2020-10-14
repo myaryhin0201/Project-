@@ -2,6 +2,14 @@
   margin-top: 120px;
   margin-bottom: 0;
 }
+.background-box {
+  background-image: url(../images/mobile/howitsmade/sectionbg.png);
+
+  background-size: 320px 124px;
+  background-position: center bottom 480px;
+  background-repeat: no-repeat;
+}
+
 .section__desc--howitsmade {
   display: block;
   text-align: center;
@@ -33,7 +41,8 @@
 }
 
 .howitsmade__button {
-  display: block;
+  @include flex;
+
   max-width: 176px;
 
   margin-left: auto;
@@ -43,14 +52,31 @@
   @include font(16px, 700, $main-color, 1.31);
 }
 
+.button__icon {
+  margin-left: 19px;
+  background-color: #ffffff;
+  fill: none;
+}
+
 .howitsmade__item:not(:last-child) {
   margin-bottom: 38px;
 }
-.howitsmade__item::before {
+
+// .howitsmade__item::before {
+//   content: '';
+//   margin-bottom: 16px;
+//   height: 50px;
+//   display: block;
+//   background-repeat: no-repeat;
+// }
+
+.howitsmade__button::after {
   content: '';
-  margin-bottom: 16px;
-  height: 50px;
+
+  height: 8px;
   display: block;
+
+  background-image: url(../images/general/arrow-right.png);
   background-repeat: no-repeat;
 }
 
