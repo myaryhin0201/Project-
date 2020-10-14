@@ -1,26 +1,51 @@
-.howitsmade__title-number {
-  margin-bottom: 30px;
-  font-family: 'Titan One';
-  @include font(34px, 400, $main-color, 1.14);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.howitsmade {
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+.section__desc--howitsmade {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.section__title--howitsmade {
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.howitsmade__img {
+  margin-bottom: 46px;
+}
+
+.howitsmade__text-box {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .howitsmade__text {
-  font-family: 'DM Sans';
   @include font(12px, 500, $text-color, 1.62);
+
+  margin-bottom: 34px;
 }
 
 .howitsmade__text--grey {
   color: $second-text-color;
+  margin-bottom: 22px;
 }
 
-.howitsmade__list-text {
-  font-family: 'DM Sans';
-  @include font(12px, 700, $text-color, 1.7);
+.howitsmade__button {
+  display: block;
+  max-width: 176px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 39px;
+
+  @include font(16px, 700, $main-color, 1.31);
+}
+
+.howitsmade__item:not(:last-child) {
   margin-bottom: 38px;
 }
-
 .howitsmade__item::before {
   content: '';
   margin-bottom: 16px;
@@ -29,6 +54,23 @@
   background-repeat: no-repeat;
 }
 
-.howitsmade__item::before {
+.howitsmade__item--milk::before {
   background-image: url(../images/icons/icon721.svg);
+}
+.howitsmade__item--apple::before {
+  background-image: url(../images/icons/icon16kg.svg);
+}
+.howitsmade__item--heart::before {
+  background-image: url(../images/icons/icon84.svg);
+}
+
+.howitsmade__title-number {
+  margin-bottom: 20px;
+  font-family: 'Titan One';
+  @include font(34px, 400, $main-color, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.howitsmade__list-text {
+  @include font(12px, 700, $text-color, 1.7);
 }
