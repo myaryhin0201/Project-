@@ -6,12 +6,6 @@
   }
 }
 
-.container {
-  @include for-size(tablet) {
-    @include flexbox(space-around, baseline);
-  }
-}
-
 .consist__made {
   text-transform: uppercase;
   color: $second-color;
