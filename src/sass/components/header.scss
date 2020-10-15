@@ -31,7 +31,7 @@
       url('../images/tablet/header/ice-cream.png'),
       url('../images/tablet/header/girl.png'),
       url('../images/icons/pink-circle-tablet.svg');
-    background-position: left 34px bottom 28px, right 247px bottom,
+    background-position: left 20px bottom 28px, right 247px bottom,
       right 34px bottom, right 137px bottom 46px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -158,7 +158,7 @@
 
 .nav__icon {
   width: 4px;
-  height: 8tpx;
+  height: 8px;
   margin-left: 14px;
   stroke: $main-color;
 }
