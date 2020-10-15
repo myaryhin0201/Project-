@@ -6,6 +6,12 @@
   }
 }
 
+.container {
+  @include for-size(tablet) {
+    @include flexbox(space-around, baseline);
+  }
+}
+
 .consist__made {
   text-transform: uppercase;
   color: $second-color;
@@ -41,6 +47,11 @@
 
 .consist {
   margin-bottom: 43px;
+
+  // @include for-size(tablet) {
+  //   text-align: center;
+  //   display: flex;
+  // }
 }
 
 .footer-info {
