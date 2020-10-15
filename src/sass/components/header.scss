@@ -148,9 +148,17 @@
 .nav__button {
   @extend .button;
   @extend .button--white;
-  display: block;
+  display: flex;
+  align-items: baseline;
   @include font(16px, 700, $main-color, 1.31);
   padding: 15px 60px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.nav__icon {
+  width: 4px;
+  height: 8tpx;
+  margin-left: 14px;
+  stroke: $main-color;
 }

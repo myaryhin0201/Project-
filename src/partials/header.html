@@ -26,7 +26,11 @@
       </button>
       <div class="nav-wrap" id="nav-wrap" data-menu>
         <nav class="nav">
-          <button type="button" class="nav__button">Buy Now</button>
+          <button type="button" class="nav__button">Buy Now
+            <svg class="nav__icon">
+              <use href="./images/icons/sprite.svg#icon-bigger"></use>
+            </svg>
+          </button>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link link">Home</a>
@@ -82,12 +86,22 @@
         </button>
       </div>
       <div class="hero-info">
-        <p class="hero__text">
+        <p class="hero-info__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <a href="#" class="hero__arrow">
-          <img src="./images/general/arrow-right.png" alt="Красная стрелка вправо в белом круге" width="18">
+        <a href="#">
+          <picture>
+            <source srcset="
+                              ./images/general/arrow-right-26.png    1x,
+                              ./images/general/arrow-right-26@2x.png 2x
+                            " media="(min-width: 1200px)" />
+            <source srcset="
+                              ./images/general/arrow-right-18.png    1x,
+                              ./images/general/arrow-right-18@2x.png 2x
+                            " media="(min-width: 768px)" />
+          <img src="./images/general/arrow-right-18.png" alt="Красная стрелка вправо в белом круге">
+          </picture>
         </a>
       </div>
     </section>
