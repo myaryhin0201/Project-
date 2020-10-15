@@ -5,15 +5,6 @@
     text-align: left;
   }
 }
-.social-list {
-  display: inline-flex;
-  justify-content: right;
-  align-items: center;
-  text-align: right;
-
-  width: 19px;
-  height: 19px;
-}
 
 .consist__made {
   text-transform: uppercase;
@@ -88,4 +79,36 @@
   text-align: right;
 
   color: $main-color;
+}
+
+.social-list__icon:hover,
+.social-list__icon:focus {
+  background-color: $main-color;
+  fill: $main-color;
+  border-radius: 50%;
+}
+
+.social-list__icon {
+  width: 19px;
+  height: 19px;
+  fill: #fea5bb;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.social-list {
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+
+  height: 19px;
 }
