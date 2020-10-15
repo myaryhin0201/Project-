@@ -4,7 +4,6 @@
   @include for-size(mobile-tablet) {
     height: calc(100% - 85px * 2);
   }
-   
 }
 .hero__title {
   font-size: 48px;
@@ -13,6 +12,9 @@
     font-size: 34px;
     line-height: 0.9;
   }
+  @include for-size(desktop) {
+    font-size: 58px;
+  }
 }
 .hero__desc {
   @include font(26px, 400, $white-color, 1.15);
@@ -20,6 +22,9 @@
   text-transform: uppercase;
   @include for-size(tablet) {
     @include font(22px, 400, $white-color, 1.14);
+  }
+  @include for-size(desktop) {
+    @include font(38px, 400, $white-color, 1.16);
   }
 }
 .hero__button {
@@ -31,7 +36,6 @@
   @include for-size(mobile-tablet) {
     display: none;
   }
-  margin-left: 495px;
 }
 .hero-item {
   position: relative;
@@ -48,31 +52,55 @@
   @include font(28px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  @include for-size(desktop) {
+    @include font(46px, 400, $main-color, 1.15);
+  }
 }
 
 .hero-item__place {
   display: block;
   @include font(8px, 400, $white-color, 1.25);
+  @include for-size(desktop) {
+    @include font(14px, 400, $white-color, 1.28);
+  }
 }
 .hero-item__icon {
   position: absolute;
   left: 34px;
   top: -2px;
   z-index: 1;
+  @include for-size(desktop) {
+    width: 30px;
+    left: 60px;
+    top: -4px;
+  }
 }
 
 .hero-flex {
-  @include flex($ai: baseline);
+  width: 100%;
+  @include flex($justcont: space-between, $ai: baseline);
+  @include for-size(desktop) {
+    margin-top: 84px;
+  }
 }
-.hero__text {
+.hero-info__text {
   width: 114px;
   margin-bottom: 8px;
   @include font(8px, 400, $white-color, 1.5);
+  @include for-size(desktop) {
+    width: 200px;
+    margin-bottom: 20px;
+    @include font(14px, 400, $white-color, 1.4);
+  }
 }
 .hero-info {
-    @include for-size(mobile-tablet) {
+  @include for-size(mobile-tablet) {
     display: none;
   }
   margin-top: 60px;
   margin-left: 134px;
+  @include for-size(desktop) {
+    margin-top: 100px;
+    margin-left: 235px;
+  }
 }
