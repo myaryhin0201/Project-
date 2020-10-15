@@ -286,7 +286,7 @@
 
 }
 
-.contacts-block__button { 
+.contacts-block__link { 
   @include flex(flex, row, center, center);
   @extend .button;
   @include font(16px, 700, $white-color, 1.31);
@@ -309,7 +309,7 @@
   
 }
 
-.contacts-block__button--white {
+.contacts-block__link--white {
   @extend .button;
   @extend .button--white;
   @include font(16px, 700, $main-color, 1.31);
