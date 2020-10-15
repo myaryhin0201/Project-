@@ -36,10 +36,6 @@
   @include for-size(mobile-tablet) {
     display: none;
   }
-  margin-left: 495px;
-  @include for-size(desktop) {
-    margin-left: 700px;
-  }
 }
 .hero-item {
   position: relative;
@@ -81,7 +77,8 @@
 }
 
 .hero-flex {
-  @include flex($ai: baseline);
+  width: 100%;
+  @include flex($justcont: space-between, $ai: baseline);
   @include for-size(desktop) {
     margin-top: 84px;
   }
