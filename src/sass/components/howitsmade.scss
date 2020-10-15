@@ -1,10 +1,7 @@
 .howitsmade {
-  padding-top: 120px;
-  padding-bottom: 0;
-
-  @include for-size(tablet) {
-    background-color: $bg-color;
-  }
+  padding-top: 125px;
+  padding-bottom: 145px;
+  background-color: $bg-color;
 
   @include for-size(tablet-only) {
     padding-top: 130px;
@@ -12,17 +9,46 @@
   }
 
   @include for-size(desktop) {
-    padding-top: 130px;
-    padding-bottom: 246px;
+    padding-top: 125px;
+    padding-bottom: 310px;
+  }
+}
+.article {
+  @include for-size(desktop) {
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-image: url(../images/desktop/howitsmade/sectionbg.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../images/desktop/howitsmade/sectionbg@2x.png);
+      }
+    }
   }
 }
 
 .background-box {
-  background-image: url(../images/mobile/howitsmade/sectionbg.png);
-
   background-size: 320px 124px;
-  background-position: center bottom 480px;
+  background-position: center;
   background-repeat: no-repeat;
+
+  @include for-size(mobile-tablet) {
+    background-image: url(../images/mobile/howitsmade/sectionbg.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url(../images/mobile/howitsmade/sectionbg@2x.png);
+      }
+    }
+  }
 }
 
 .section__desc--howitsmade {
@@ -74,11 +100,18 @@
 }
 
 .howitsmade__text-box {
-  padding-left: 30px;
-  padding-right: 30px;
-
   @include for-size(mobile-tablet) {
     margin-bottom: 39px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include for-size(tablet) {
+    width: 340px;
+    margin-left: 17px;
+  }
+  @include for-size(desktop) {
+    width: 463px;
+    margin-left: 74px;
   }
 }
 
@@ -104,13 +137,12 @@
 
 .howitsmade__button {
   @include flex;
-
   max-width: 176px;
-
-  margin-left: auto;
-  margin-right: auto;
-
   @include font(16px, 700, $main-color, 1.31);
+  @include for-size(mobile-tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .button__icon {
@@ -121,6 +153,13 @@
 .howitsmade__item:not(:last-child) {
   @include for-size(mobile-tablet) {
     margin-bottom: 38px;
+  }
+  @include for-size(tablet) {
+    margin-right: 60px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 30px;
   }
 }
 
@@ -152,12 +191,22 @@
 
   @include for-size(tablet) {
     @include font(48px, 400, $main-color, 1.14);
-
-    @include for-size(desktop) {
-      @include font(58px, 400, $main-color, 1.14);
-    }
   }
-  .howitsmade__list-text {
-    @include font(12px, 700, $text-color, 1.7);
+
+  @include for-size(desktop) {
+    @include font(58px, 400, $main-color, 1.14);
+  }
+}
+
+.howitsmade__list-text {
+  @include font(12px, 700, $text-color, 1.7);
+
+  @include for-size(tablet) {
+    @include font(14px, 700, $text-color, 1.74);
+  }
+
+  @include for-size(desktop) {
+    @include font(16px, 700, $text-color, 1.76);
+    letter-spacing: 0.06em;
   }
 }
