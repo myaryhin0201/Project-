@@ -54,11 +54,13 @@
 
   @include for-size(tablet) {
     @include font(48px, 400, $main-color, 115%);
+    margin-bottom: 160px;
   }
 
   @include for-size(desktop) {
     @include font(55px, 400, $main-color, 115%);
     letter-spacing: 0.06em;
+    margin-bottom: 260px;
   }
 }
 
@@ -99,6 +101,7 @@
   @include for-size(desktop) {
     margin-right: 25px;
     margin-bottom: 0;
+    padding-bottom: 50px;
     width: calc((100% - 50px) / 3);
     &:last-child {
       margin-right: 0;
@@ -107,10 +110,14 @@
 }
 
 .products__item-pic {
-  margin: auto;
   position: absolute;
+  margin: auto;
   top: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
 }
 
 .products__item-svg {
