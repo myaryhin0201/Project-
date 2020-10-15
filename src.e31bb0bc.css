@@ -9,7 +9,6 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 html,
@@ -456,7 +455,7 @@ svg {
   }
 }
 
-.button, .contacts-block__button--white, .contacts-block__button, .nav__button, .button--white {
+.button, .contacts-block__link--white, .contacts-block__link, .nav__button, .button--white {
   font-size: 8px;
   font-weight: 400;
   color: #ffffff;
@@ -472,16 +471,16 @@ svg {
   background: #d41443;
   transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover, .contacts-block__button--white:hover, .contacts-block__button:hover, .nav__button:hover, .button--white:hover, .button:focus, .contacts-block__button--white:focus, .contacts-block__button:focus, .nav__button:focus, .button--white:focus {
+.button:hover, .contacts-block__link--white:hover, .contacts-block__link:hover, .nav__button:hover, .button--white:hover, .button:focus, .contacts-block__link--white:focus, .contacts-block__link:focus, .nav__button:focus, .button--white:focus {
   background: #c7133e;
   transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button--white, .contacts-block__button--white, .nav__button {
+.button--white, .contacts-block__link--white, .nav__button {
   color: #d41443;
   background: #ffffff;
   transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button--white:hover, .contacts-block__button--white:hover, .nav__button:hover, .button--white:focus, .contacts-block__button--white:focus, .nav__button:focus {
+.button--white:hover, .contacts-block__link--white:hover, .nav__button:hover, .button--white:focus, .contacts-block__link--white:focus, .nav__button:focus {
   background: #ecebeb;
   transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1332,7 +1331,7 @@ svg {
   }
 }
 
-.contacts-block__button {
+.contacts-block__link {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1344,7 +1343,7 @@ svg {
   border-radius: 22px;
 }
 @media screen and (max-width: 767px) {
-  .contacts-block__button {
+  .contacts-block__link {
     padding: 12px 17px;
     margin: 0 auto;
     width: 160px;
@@ -1352,30 +1351,30 @@ svg {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts-block__button {
+  .contacts-block__link {
     padding: 12px 32px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contacts-block__button {
+  .contacts-block__link {
     padding: 12px 35px;
   }
 }
 
-.contacts-block__button--white {
+.contacts-block__link--white {
   font-size: 16px;
   font-weight: 700;
   color: #d41443;
   line-height: 1.31;
 }
 @media screen and (max-width: 767px) {
-  .contacts-block__button--white {
+  .contacts-block__link--white {
     margin: 0 auto;
     padding: 12px 35px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contacts-block__button--white {
+  .contacts-block__link--white {
     margin-left: 15px;
     padding: 12px 39px;
   }
@@ -1504,6 +1503,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .article {
+    margin-bottom: 66px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .howitsmade__img {
     margin-bottom: 46px;
@@ -1560,16 +1565,19 @@ svg {
 
 .button__icon {
   margin-left: 19px;
-  fill: none;
+  stroke: #d41443;
 }
 
-.howitsmade__item:not(:last-child) {
-  margin-bottom: 38px;
+@media screen and (max-width: 767px) {
+  .howitsmade__item:not(:last-child) {
+    margin-bottom: 38px;
+  }
 }
 
-.howitsmade__button::after {
+.howitsmade__item::before {
   content: "";
-  height: 8px;
+  margin-bottom: 16px;
+  height: 50px;
   display: block;
   background-image: url(/arrow-right-18.1e597992.png);
   background-repeat: no-repeat;
@@ -1597,8 +1605,23 @@ svg {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-
-.howitsmade__list-text {
+@media screen and (min-width: 768px) {
+  .howitsmade__title-number {
+    font-size: 48px;
+    font-weight: 400;
+    color: #d41443;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .howitsmade__title-number {
+    font-size: 58px;
+    font-weight: 400;
+    color: #d41443;
+    line-height: 1.14;
+  }
+}
+.howitsmade__title-number .howitsmade__list-text {
   font-size: 12px;
   font-weight: 700;
   color: #000000;
