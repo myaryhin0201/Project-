@@ -1,12 +1,81 @@
 .header {
-  position: relative;
-  padding-top: 10px;
   height: 500px;
   background-color: $ice-cream;
+  overflow-x: hidden;
+  @include for-size(tablet) {
+    height: 400px;
+  }
+  @include for-size(desktop) {
+    height: 666px;
+  }
+}
+.header__container {
+  position: relative;
+  background-image: url('../images/mobile/header/ice-cream.png'),
+    url('../images/icons/pink-circle-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: right 32px bottom, right bottom 75px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/header/ice-cream@2x.png'),
+      url('../images/icons/pink-circle-mobile.svg');
+    background-size: 171px 410px, auto auto;
+  }
+
+  @include for-size(tablet) {
+    background-image: url('../images/tablet/header/milk.png'),
+      url('../images/tablet/header/ice-cream.png'),
+      url('../images/tablet/header/girl.png'),
+      url('../images/icons/pink-circle-tablet.svg');
+    background-position: left 20px bottom 28px, right 247px bottom,
+      right 34px bottom, right 137px bottom 46px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/header/milk@2x.png'),
+        url('../images/tablet/header/ice-cream@2x.png'),
+        url('../images/tablet/header/girl@2x.png'),
+        url('../images/icons/pink-circle-tablet.svg');
+      background-size: 124px 126px, 143px 336px, 168px 133px, auto auto;
+    }
+  }
+  @include for-size(desktop) {
+    background-image: url('../images/desktop/header/milk.png'),
+      url('../images/desktop/header/ice-cream.png'),
+      url('../images/desktop/header/girl.png'),
+      url('../images/icons/pink-circle-desktop.svg');
+    background-position: left 77px bottom 45px, right 450px bottom,
+      right 109px bottom, right 267px bottom 75px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/header/milk@2x.png'),
+        url('../images/desktop/header/ice-cream@2x.png'),
+        url('../images/desktop/header/girl@2x.png'),
+        url('../images/icons/pink-circle-desktop.svg');
+      background-size: 188px 191px, 236px 557px, 293px 232px, auto auto;
+    }
+  }
 }
 .header__flexbox {
-  padding-bottom: 24px;
+  padding-bottom: 25px;
+  padding-top: 10px;
   @include flex($justcont: space-between);
+
+  @include for-size(tablet) {
+    padding-top: 37px;
+    padding-bottom: 15px;
+  }
 }
 .header__title {
   font-family: 'Titan One';
@@ -17,11 +86,11 @@
   font-size: 100px;
 }
 .header__button {
-  @extend .button--white;
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   border: 0;
+  z-index: 99;
   background-color: transparent;
   & .header__icon-close {
     @include trans(opacity, 0);
@@ -36,30 +105,23 @@
     @include trans(opacity, 0);
   }
 }
-.header__icon-close {
-  @include trans(fill, $main-color);
-  .header__button:hover &,
-  .header__button:focus & {
-    @include trans(fill, $white-color);
-  }
-}
+.header__icon-close,
 .header__icon-burger {
-  @include trans(fill, $white-color);
+  @include trans(stroke, $main-color);
   .header__button:hover &,
   .header__button:focus & {
-    @include trans(fill, $main-color);
+    @include trans(stroke, $white-color);
   }
 }
 .nav-wrap {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 250px;
   height: 100%;
-  padding-top: 60px;
-  padding-bottom: 64px;
+  padding-top: 85px;
   background-color: $menu;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
   @include trans(opacity, 0);
   @include trans(visibility, hidden);
@@ -86,7 +148,17 @@
 .nav__button {
   @extend .button;
   @extend .button--white;
+  display: flex;
+  align-items: baseline;
   @include font(16px, 700, $main-color, 1.31);
+  padding: 15px 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
-  align-items: center;
+.nav__icon {
+  width: 4px;
+  height: 8px;
+  margin-left: 14px;
+  stroke: $main-color;
 }

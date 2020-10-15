@@ -1,0 +1,91 @@
+.footer {
+  background-color: $bg-color;
+
+  @include for-size(todesktop) {
+    text-align: left;
+  }
+}
+.social-list {
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+
+  width: 19px;
+  height: 19px;
+}
+
+.consist__made {
+  text-transform: uppercase;
+  color: $second-color;
+  width: 232px;
+  height: 42px;
+  left: 22px;
+  top: 6706px;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  margin-bottom: 17px;
+}
+
+.consist__with {
+  text-transform: uppercase;
+  color: $main-color;
+  width: 200px;
+  height: 76px;
+  left: 20px;
+  top: 6765px;
+
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+}
+
+.footer-info {
+  text-align: right;
+}
+
+.footer-contacts {
+  display: flex;
+}
+
+.footer-contacts__text {
+  width: 230px;
+  height: 22px;
+  left: 70px;
+  top: 6962px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+
+  text-align: right;
+
+  color: $text-color;
+}
+
+.footer-contacts__link {
+  width: 166px;
+  height: 22px;
+  left: 70px;
+  top: 6962px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 186%;
+
+  text-align: right;
+
+  color: $main-color;
+}

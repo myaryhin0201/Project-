@@ -1,0 +1,159 @@
+.howitsmade {
+  padding-top: 120px;
+  padding-bottom: 0;
+
+  @include for-size(tablet) {
+    background-color: $bg-color;
+  }
+
+  @include for-size(tablet-only) {
+    padding-top: 130px;
+    padding-bottom: 246px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 130px;
+    padding-bottom: 246px;
+  }
+}
+
+.background-box {
+  background-image: url(../images/mobile/howitsmade/sectionbg.png);
+
+  background-size: 320px 124px;
+  background-position: center bottom 480px;
+  background-repeat: no-repeat;
+}
+
+.section__desc--howitsmade {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @include for-size(tablet-only) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.section__title--howitsmade {
+  margin-bottom: 26px;
+  text-align: center;
+
+  @include for-size(tablet-only) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  @include for-size(desktop) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+}
+
+.flex-box {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+
+.howitsmade__img {
+  @include for-size(mobile-tablet) {
+    margin-bottom: 46px;
+  }
+}
+
+.howitsmade__text-box {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include for-size(mobile-tablet) {
+    margin-bottom: 39px;
+  }
+}
+
+.howitsmade__text {
+  @include font(12px, 500, $text-color, 1.62);
+
+  margin-bottom: 34px;
+
+  @include for-size(tablet) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
+}
+
+.howitsmade__text--grey {
+  color: $second-text-color;
+  margin-bottom: 22px;
+}
+
+.howitsmade__button {
+  @include flex;
+
+  max-width: 176px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(16px, 700, $main-color, 1.31);
+}
+
+.button__icon {
+  margin-left: 19px;
+
+  fill: none;
+}
+
+.howitsmade__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+// .howitsmade__item::before {
+//   content: '';
+//   margin-bottom: 16px;
+//   height: 50px;
+//   display: block;
+//   background-repeat: no-repeat;
+// }
+
+.howitsmade__button::after {
+  content: '';
+
+  height: 8px;
+  display: block;
+
+  background-image: url(../images/general/arrow-right-18.png);
+  background-repeat: no-repeat;
+}
+
+.howitsmade__item--milk::before {
+  background-image: url(../images/icons/icon721.svg);
+}
+.howitsmade__item--apple::before {
+  background-image: url(../images/icons/icon16kg.svg);
+}
+.howitsmade__item--heart::before {
+  background-image: url(../images/icons/icon84.svg);
+}
+
+.howitsmade__title-number {
+  margin-bottom: 20px;
+  font-family: 'Titan One';
+  @include font(34px, 400, $main-color, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.howitsmade__list-text {
+  @include font(12px, 700, $text-color, 1.7);
+}

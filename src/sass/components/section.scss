@@ -1,6 +1,9 @@
 .section {
   padding-top: 120px;
   padding-bottom: 100px;
+  &--feedback {
+    padding-bottom: 200px;
+  }
 }
 .section__title {
   margin-bottom: 30px;
@@ -8,6 +11,9 @@
   @include font(34px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  &--hero {
+    margin-bottom: 20px;
+  }
 }
 .section__desc {
   font-family: 'Titan One';
