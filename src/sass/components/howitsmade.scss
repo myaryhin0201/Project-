@@ -62,7 +62,11 @@
     display: flex;
   }
 }
-
+.article {
+  @include for-size(tablet) {
+    margin-bottom: 66px;
+  }
+}
 .howitsmade__img {
   @include for-size(mobile-tablet) {
     margin-bottom: 46px;
@@ -111,29 +115,21 @@
 
 .button__icon {
   margin-left: 19px;
-
-  fill: none;
+  stroke: $main-color;
 }
 
 .howitsmade__item:not(:last-child) {
-  margin-bottom: 38px;
+  @include for-size(mobile-tablet) {
+    margin-bottom: 38px;
+  }
 }
 
-// .howitsmade__item::before {
-//   content: '';
-//   margin-bottom: 16px;
-//   height: 50px;
-//   display: block;
-//   background-repeat: no-repeat;
-// }
-
-.howitsmade__button::after {
+.howitsmade__item::before {
   content: '';
-
-  height: 8px;
+  margin-bottom: 16px;
+  height: 50px;
   display: block;
-
-  background-image: url(../images/general/arrow-right-26.png);
+  background-image: url(../images/general/arrow-right-18.png);
   background-repeat: no-repeat;
 }
 
@@ -153,7 +149,15 @@
   @include font(34px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-}
-.howitsmade__list-text {
-  @include font(12px, 700, $text-color, 1.7);
+
+  @include for-size(tablet) {
+    @include font(48px, 400, $main-color, 1.14);
+
+    @include for-size(desktop) {
+      @include font(58px, 400, $main-color, 1.14);
+    }
+  }
+  .howitsmade__list-text {
+    @include font(12px, 700, $text-color, 1.7);
+  }
 }

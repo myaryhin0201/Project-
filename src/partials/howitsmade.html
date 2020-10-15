@@ -7,32 +7,34 @@
       >
       <h2 class="section__title section__title--howitsmade">how it’s made?</h2>
 
-      <div class="flex-box">
-        <picture class="howitsmade__img">
-          <source
-            srcset="
-              ./images/desktop/howitsmade/cow.png    1x,
-              ./images/desktop/howitsmade/cow@2x.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ./images/tablet/howitsmade/cow.png    1x,
-              ./images/tablet/howitsmade/cow@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/mobile/howitsmade/cow.png    1x,
-              ./images/mobile/howitsmade/cow@2x.png 2x
-            "
-            media="(max-width: 767px)"
-          />
+      <div class="flex-box article">
+        <div class="howitsmade__img">
+          <picture>
+            <source
+              srcset="
+                ./images/mobile/howitsmade/cow.png    1x,
+                ./images/mobile/howitsmade/cow@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/howitsmade/cow.png    1x,
+                ./images/tablet/howitsmade/cow@2x.png 2x
+              "
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/desktop/howitsmade/cow.png    1x,
+                ./images/desktop/howitsmade/cow@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
 
-          <img src="./images/mobile/howitsmade/cow.png" alt="" />
-        </picture>
+            <img src="./images/mobile/howitsmade/cow.png" alt=" " />
+          </picture>
+        </div>
 
         <div class="howitsmade__text-box">
           <p class="howitsmade__text">
@@ -59,7 +61,7 @@
         </div>
       </div>
 
-      <ul>
+      <ul class="flex-box">
         <li class="howitsmade__item howitsmade__item--milk">
           <h3 class="howitsmade__title-number">721</h3>
           <p class="howitsmade__list-text">
