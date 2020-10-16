@@ -7,8 +7,8 @@
   }
 
   @include for-size (tablet-only) {
-  padding-top: 0;
-  padding-bottom: 87px;
+    padding-top: 0;
+    padding-bottom: 87px;
   }
 
   @include for-size(desktop) {
@@ -110,40 +110,36 @@
   }
 }
 
+.contacts-address__background {
+  display: inline-block; 
+}
+
 .contacts-address__title {
+  text-align: center;
+  
   background-color: $coffee;
-  border-radius: 4px;
+  border-radius: 6px;
   @include for-size(mobile-tablet) {
     @include font(12px, 500, $white-color, 1.86);
-    @include flex(flex, center);
+    padding: 0 25px;
     margin-bottom: 25px;
-    width: 80px;
   }
 
   @include for-size(tablet-only) {
     @include font(16px, 500, $white-color, 1.86);
-    @include flex(flex, center);
+    padding: 0 17px;
     margin-bottom: 30px;
-    width: 73px;
   }
 
   @include for-size(desktop) {
     @include font(16px, 500, $white-color, 1.86);
-    @include flex(flex, center);
+    padding: 0 17px;
     margin-bottom: 32px;
-    width: 73px;
   }
 }
 
 .contacts-address__title--green {
   background-color: $milkshake;
-  @include for-size(mobile-only) {
-    width: 130px;
-  }
-
-  @include for-size(tablet) {
-    width: 138px;
-  }
 }
 
 .contacts-address__city {
@@ -273,13 +269,20 @@
 
 .contacts-block {
    margin-top: 54px;
+
+   @include for-size(mobile-tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 160px;
+   }
+
    @include for-size(tablet-only){
-      @include flex(flex, center, center);
+      @include flex(flex, row, center, center);
       margin-top: 81px;
    }   
 
    @include for-size(desktop) {
-      @include flex(flex, center, center);
+      @include flex(flex, row, center, center);
       margin-top: 86px;
    }
 
@@ -287,7 +290,7 @@
 }
 
 .contacts-block__link { 
-  @include flex(flex, row, center, center);
+  display: flex;
   @extend .button;
   @include font(16px, 700, $white-color, 1.31);
   border-radius: 22px;
@@ -295,7 +298,6 @@
   @include for-size(mobile-tablet) {
     padding: 12px 17px;
     margin: 0 auto;
-    width: 160px;
     margin-bottom: 10px;
   }
   
