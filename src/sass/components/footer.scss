@@ -12,6 +12,11 @@
     justify-content: center;
     // align-items: center;
   }
+
+  @include for-size(desktop) {
+    padding-right: 95px;
+    padding-left: 95px;
+  }
 }
 
 .consist__made {
@@ -29,26 +34,62 @@
   line-height: 21px;
 
   margin-bottom: 17px;
+
+  @include for-size(desktop) {
+    width: 472px;
+    height: 34px;
+    left: 114px;
+    top: 4923px;
+
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
 
 .consist__with {
-  text-transform: uppercase;
-  color: $main-color;
-  width: 200px;
-  height: 76px;
-  left: 20px;
-  top: 6765px;
+  @include for-size(todesktop) {
+    text-transform: uppercase;
+    color: $main-color;
+    width: 200px;
+    height: 76px;
+    left: 20px;
+    top: 6765px;
 
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 0.04em;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+  }
+
+  @include for-size(desktop) {
+    height: 66px;
+    left: 114px;
+    top: 4972px;
+
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-color;
+  }
 }
 
 .consist {
   margin-bottom: 43px;
+
+  @include for-size(desktop) {
+    width: 475px;
+  }
 }
 
 .footer-info {
@@ -56,6 +97,12 @@
 
   @include for-size(tablet) {
     margin-bottom: 91px;
+    padding-left: 95px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 97px;
+    padding-left: 200px;
   }
 }
 
@@ -63,9 +110,6 @@
   display: flex;
   margin-bottom: 43px;
 
-  // display: inline-flex;
-  // justify-content: right;
-  // align-items: center;
   text-align: right;
 }
 
@@ -139,4 +183,17 @@
   height: 19px;
 
   margin-bottom: 46px;
+}
+
+.footer .container {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
 }
