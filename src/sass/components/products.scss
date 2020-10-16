@@ -111,13 +111,13 @@
 
 .products__item-pic {
   position: absolute;
-  margin: auto;
+  /* margin: auto; */
   top: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -45%);
-  display: flex;
-  justify-content: center;
+  /*   display: flex;
+  justify-content: center; */
 
   @include for-size(tablet) {
     transform: translate(-50%, -45%);
