@@ -6,7 +6,7 @@
   }
 }
 
-.container {
+.footer__container {
   @include for-size(tablet) {
     display: flex;
     justify-content: center;
