@@ -6,6 +6,14 @@
   }
 }
 
+.container {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+}
+
 .consist__made {
   text-transform: uppercase;
   color: $second-color;
@@ -41,20 +49,24 @@
 
 .consist {
   margin-bottom: 43px;
-
-  // @include for-size(tablet) {
-  //   text-align: center;
-  //   display: flex;
-  // }
 }
 
 .footer-info {
   text-align: right;
+
+  @include for-size(tablet) {
+    margin-bottom: 91px;
+  }
 }
 
 .footer-contacts {
   display: flex;
   margin-bottom: 43px;
+
+  // display: inline-flex;
+  // justify-content: right;
+  // align-items: center;
+  text-align: right;
 }
 
 .footer-contacts__text {
@@ -89,6 +101,10 @@
   text-align: right;
 
   color: $main-color;
+
+  @include for-size(tablet) {
+    width: 116px;
+  }
 }
 
 .social-list__icon:hover,
