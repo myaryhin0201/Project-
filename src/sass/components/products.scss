@@ -58,7 +58,7 @@
   }
 
   @include for-size(desktop) {
-    @include font(55px, 400, $main-color, 115%);
+    @include font(58px, 400, $main-color, 114%);
     letter-spacing: 0.06em;
     margin-bottom: 240px;
   }
