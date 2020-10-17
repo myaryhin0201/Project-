@@ -1,16 +1,16 @@
 .howitsmade {
   padding-top: 125px;
-  padding-bottom: 97px;
+  // padding-bottom: 97px;
   background-color: $bg-color;
 
   @include for-size(tablet-only) {
     padding-top: 130px;
-    padding-bottom: 140px;
+    // padding-bottom: 140px;
   }
 
   @include for-size(desktop) {
     padding-top: 125px;
-    padding-bottom: 140px;
+    // padding-bottom: 140px;
   }
 }
 
@@ -157,7 +157,7 @@
   @include flex;
   max-width: 176px;
   @include font(14px, 700, $main-color, 1.28);
-  @include for-size(tablet){
+  @include for-size(tablet) {
     @include font(16px, 700, $main-color, 1.31);
   }
   @include for-size(mobile-tablet) {
@@ -229,5 +229,17 @@
   @include for-size(desktop) {
     @include font(16px, 700, $text-color, 1.76);
     letter-spacing: 0.06em;
+  }
+}
+.gallery {
+  position: relative;
+  top: 64px;
+
+  @include for-size(tablet) {
+    top: 150px;
+  }
+
+  @include for-size(desktop) {
+    top: 235px;
   }
 }
