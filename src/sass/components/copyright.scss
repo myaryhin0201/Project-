@@ -2,11 +2,20 @@
   border-top: 1px solid #e1e1e1;
   padding-top: 20px;
   padding-bottom: 25px;
+  background-color: $bg-color;
 }
-.coryright__text {
+.copyright__block {
   display: block;
   @include font(14px, 700, $second-text-color, 1.5);
-  width: 150px;
   text-align: center;
   margin: 0 auto;
+}
+.copyright__line {
+  display: block;
+  @include for-size(tablet) {
+    display: inline-block;
+  }
+  &--block {
+    display: block;
+  }
 }
