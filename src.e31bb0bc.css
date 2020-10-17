@@ -9,7 +9,6 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 html,
@@ -894,9 +893,6 @@ svg {
   padding-top: 120px;
   padding-bottom: 100px;
 }
-.section--feedback {
-  padding-bottom: 200px;
-}
 
 .section__title {
   margin-bottom: 30px;
@@ -1551,9 +1547,21 @@ svg {
 }
 
 .section--feedback {
-  padding-top: 80px;
+  padding-top: 170px;
   padding-bottom: 170px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .section--feedback {
+    padding-top: 275px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--feedback {
+    padding-top: 380px;
+    padding-bottom: 235px;
+  }
 }
 
 .feedback-list__item {
@@ -1561,12 +1569,12 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .feedback-list__item {
-    max-width: 460px;
+    max-width: 620px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feedback-list__item {
-    max-width: 750px;
+    max-width: 925px;
   }
 }
 
@@ -1596,14 +1604,26 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .feedback-text {
-    padding: 30px 36px 25px;
+    margin-bottom: 25px;
+    padding: 50px 80px 35px;
     background-position: 30px 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feedback-text {
+    margin-bottom: 15px;
     padding: 50px 90px 40px;
+    background-position: 50px 30px;
   }
+}
+.feedback-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: aqua;
 }
 
 .feedback-list__item:not(:first-child) {
@@ -1632,7 +1652,8 @@ svg {
 }
 
 .feedback-svg-list__item:hover,
-.feedback-svg-list__item:focus {
+.feedback-svg-list__item:focus,
+.active {
   fill: #d41443;
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1641,6 +1662,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 18px;
+  fill: #c7133e;
 }
 
 .feedback-person {
@@ -1675,43 +1697,18 @@ svg {
     font-size: 11px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .section--gallery {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section--gallery {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section--gallery {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-}
-.section--gallery .gallery__image {
-  margin: 0 auto;
-}
-
 .howitsmade {
   padding-top: 125px;
-  padding-bottom: 97px;
   background-color: #fff5f6;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .howitsmade {
     padding-top: 130px;
-    padding-bottom: 140px;
   }
 }
 @media screen and (min-width: 1200px) {
   .howitsmade {
     padding-top: 125px;
-    padding-bottom: 140px;
   }
 }
 
@@ -1987,6 +1984,21 @@ svg {
     color: #000000;
     line-height: 1.76;
     letter-spacing: 0.06em;
+  }
+}
+
+.gallery {
+  position: relative;
+  top: 64px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    top: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    top: 235px;
   }
 }
 
