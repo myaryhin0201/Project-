@@ -1,0 +1,44 @@
+.section--feedback {
+  padding-top: 80px;
+  padding-bottom: 170px;
+  text-align: center;
+}
+.feedback-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.feedback-list__item:not(:first-child) {
+  display: none;
+}
+.feedback-text-block {
+  padding: 43px 60px 26px;
+  margin-bottom: 30px;
+  @include for-size(tablet) {
+    padding: 30px 40px;
+  }
+}
+
+.feedback-text {
+  @include font(12px, 500, $text-color, 2.55);
+}
+
+.feedback-svg-list {
+  display: flex;
+  justify-content: center;
+}
+.feedback-svg-list__item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.three-red-points {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.feedback-person {
+  margin-bottom: 30px;
+  @include font(14px, 500, $text-color, 1.86);
+}
