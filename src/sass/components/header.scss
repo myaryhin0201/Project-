@@ -169,6 +169,11 @@
 .nav__link {
   display: inline-block;
   @include font(14px, 700, $white-color, 1.28);
+
+  &:hover,
+  &:focus {
+    @include trans(color, $main-color);
+  }
 }
 .nav__button {
   @extend .button;
