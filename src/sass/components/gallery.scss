@@ -1,17 +1,17 @@
-.section--gallery {
-  @include for-size(mobile) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  @include for-size(tablet) {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  @include for-size(desktop) {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-  & .gallery__image {
-    margin: 0 auto;
-  }
-}
+// .section--gallery {
+//   @include for-size(mobile) {
+//     padding-top: 40px;
+//     padding-bottom: 40px;
+//   }
+//   @include for-size(tablet) {
+//     padding-top: 65px;
+//     padding-bottom: 65px;
+//   }
+//   @include for-size(desktop) {
+//     padding-top: 65px;
+//     padding-bottom: 65px;
+//   }
+//   & .gallery__image {
+//     margin: 0 auto;
+//   }
+// }
