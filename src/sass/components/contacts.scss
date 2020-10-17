@@ -161,11 +161,11 @@
 
 .contacts-address__text {
   @include for-size(mobile-tablet) {
-    @include font(12px, 500, $second-text-color, 1.86);
+    @include font(12px, 500, $second-text-color, 1.5);
   }
 
   @include for-size(tablet-only) {
-    @include font(14px, 500, $second-text-color, 1.86);
+    @include font(14px, 500, $second-text-color, 1.66);
   }
 
   @include for-size(desktop) {
@@ -224,15 +224,15 @@
 
 .contacts-work__time {
   @include for-size(mobile-tablet) {
-    @include font(12px, 500, $second-color, 1.83);
+    @include font(12px, 500, $second-color, 1.86);
   }
 
   @include for-size(tablet-only) {
-    @include font(14px, 500, $second-color, 1.83);
+    @include font(14px, 500, $second-color, 1.86);
   }
 
   @include for-size(desktop) {
-    @include font(16px, 500, $second-color, 1.83);
+    @include font(16px, 500, $second-color, 1.86);
   }
 }
 

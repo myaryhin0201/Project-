@@ -156,7 +156,10 @@
 .article__button {
   @include flex;
   max-width: 176px;
-  @include font(16px, 700, $main-color, 1.31);
+  @include font(14px, 700, $main-color, 1.28);
+  @include for-size(tablet){
+    @include font(16px, 700, $main-color, 1.31);
+  }
   @include for-size(mobile-tablet) {
     margin-left: auto;
     margin-right: auto;
@@ -203,7 +206,7 @@
 .howitsmade__title-number {
   margin-bottom: 20px;
   font-family: 'Titan One';
-  @include font(34px, 400, $main-color, 1.14);
+  @include font(36px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
