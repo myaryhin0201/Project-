@@ -110,9 +110,7 @@
   }
 }
 .nav {
-  @include for-size(tablet-only) {
-    @include flex();
-  }
+  @include flex();
 }
 .nav-wrap {
   @include for-size(todesktop) {
