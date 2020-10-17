@@ -87,10 +87,10 @@
 }
 
 .article {
-  display: flex;
   align-items: flex-start;
   justify-content: space-around;
   @include for-size(tablet) {
+    display: flex;
     margin-bottom: 66px;
   }
   @include for-size(desktop) {
@@ -143,6 +143,8 @@
   }
 }
 .article__paragraph--last-child {
+  margin-bottom: 17px;
+
   @include for-size(tablet-only) {
     margin-bottom: 62px;
   }
