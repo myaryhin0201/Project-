@@ -9,6 +9,7 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 html,
@@ -611,7 +612,6 @@ svg {
     right: 0;
     width: 250px;
     height: 100%;
-    padding-top: 85px;
     background-color: #e17992;
     z-index: 3;
     pointer-events: none;
@@ -630,6 +630,11 @@ svg {
     transition: visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(0);
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav-wrap {
+    padding-top: 85px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -751,25 +756,15 @@ svg {
 }
 
 .consist__made {
+  font-family: "Titan One";
   text-transform: uppercase;
   color: #ffa5ba;
-  width: 340px;
-  height: 42px;
-  left: 22px;
-  top: 6706px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 17px;
 }
 @media screen and (min-width: 768px) {
   .consist__made {
-    height: 57px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 0.04em;
@@ -778,13 +773,6 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .consist__made {
-    width: 472px;
-    height: 34px;
-    left: 114px;
-    top: 4923px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: 0.04em;
@@ -792,32 +780,20 @@ svg {
   }
 }
 
+.consist__with {
+  font-family: "Titan One";
+}
 @media screen and (max-width: 1199px) {
   .consist__with {
     text-transform: uppercase;
     color: #d41443;
-    width: 200px;
-    height: 76px;
-    left: 20px;
-    top: 6765px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 34px;
-    line-height: 39px;
     letter-spacing: 0.04em;
   }
 }
 @media screen and (min-width: 1200px) {
   .consist__with {
-    height: 66px;
-    left: 114px;
-    top: 4972px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 58px;
-    line-height: 66px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #d41443;
@@ -851,41 +827,22 @@ svg {
 }
 
 .footer-contacts__text {
-  width: 230px;
-  height: 22px;
-  left: 70px;
-  top: 6962px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-family: "DM Sans";
+  font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
   text-align: right;
   color: #000000;
 }
 @media screen and (min-width: 768px) {
   .footer-contacts__text {
-    width: 268px;
-    height: 26px;
-    left: 466px;
-    top: 4309px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 14px;
-    line-height: 186%;
     text-align: right;
   }
 }
 
 .footer-contacts__link {
-  width: 166px;
-  height: 22px;
-  left: 70px;
-  top: 6962px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
+  font-family: "DM Sans";
+  font-weight: 700;
   font-size: 12px;
   line-height: 186%;
   text-align: right;
@@ -893,15 +850,7 @@ svg {
 }
 @media screen and (min-width: 768px) {
   .footer-contacts__link {
-    width: 140px;
-    height: 26px;
-    left: 466px;
-    top: 4309px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 14px;
-    line-height: 186%;
     text-align: right;
   }
 }
@@ -944,7 +893,7 @@ svg {
 }
 
 .social-list {
-  display: inline-flex;
+  display: flex;
   justify-content: right;
   align-items: center;
   text-align: right;
