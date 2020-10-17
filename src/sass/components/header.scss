@@ -71,19 +71,10 @@
   padding-bottom: 25px;
   padding-top: 10px;
   @include flex($justcont: space-between);
-
   @include for-size(tablet) {
     padding-top: 37px;
     padding-bottom: 15px;
   }
-}
-.header__title {
-  font-family: 'Titan One';
-}
-.header__nav {
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 100px;
 }
 .header__button {
   display: inline-flex;
@@ -104,6 +95,11 @@
   &.is-open .header__icon-burger {
     @include trans(opacity, 0);
   }
+  @include for-size(desktop) {
+    & {
+      display: none;
+    }
+  }
 }
 .header__icon-close,
 .header__icon-burger {
@@ -113,24 +109,43 @@
     @include trans(stroke, $white-color);
   }
 }
+.nav {
+  @include for-size(tablet-only) {
+    @include flex();
+  }
+}
 .nav-wrap {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  padding-top: 85px;
-  background-color: $menu;
-  z-index: 3;
-  pointer-events: none;
-  @include trans(opacity, 0);
-  @include trans(visibility, hidden);
-  @include trans(transform, translateX(100%));
-  &.is-open {
-    pointer-events: initial;
-    @include trans(opacity, 1);
-    @include trans(visibility, visible);
-    @include trans(transform, translateX(0));
+  @include for-size(todesktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 85px;
+    background-color: $menu;
+    z-index: 3;
+    pointer-events: none;
+    @include trans(opacity, 0);
+    @include trans(visibility, hidden);
+    @include trans(transform, translateX(100%));
+    &.is-open {
+      pointer-events: initial;
+      @include trans(opacity, 1);
+      @include trans(visibility, visible);
+      @include trans(transform, translateX(0));
+    }
+  }
+  @include for-size(tablet-only) {
+    padding-top: 102px;
+  }
+  @include for-size(desktop) {
+    @include flex($direction: row-reverse, $justcont: space-between);
+    flex-grow: 1;
+  }
+}
+.nav__list {
+  @include for-size(desktop) {
+    @include flex();
   }
 }
 .nav__item {
@@ -139,6 +154,16 @@
   border-top: 1px solid $border;
   &:last-child {
     border-bottom: 1px solid $border;
+  }
+  @include for-size(desktop) {
+    border: none;
+    padding: 15px 0;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+    &:last-child {
+      border: none;
+    }
   }
 }
 .nav__link {
@@ -154,8 +179,27 @@
   padding: 15px 60px;
   margin: 0 auto;
   margin-bottom: 20px;
+  @include for-size(desktop) {
+    margin-left: 110px;
+    margin-bottom: 0;
+    padding: 17px 37px;
+  }
 }
-
+.nav__button--tablet {
+  display: none;
+  @extend .button;
+  @extend .button--white;
+  @include font(16px, 700, $main-color, 1.31);
+  &.active {
+    display: none;
+  }
+  @include for-size(tablet-only) {
+    display: flex;
+    align-items: baseline;
+    margin-left: 30px;
+    padding: 13px 40px;
+  }
+}
 .nav__icon {
   width: 4px;
   height: 8px;

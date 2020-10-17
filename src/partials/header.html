@@ -4,29 +4,31 @@
       <a href="#" class="logo"
         ><img src="./images/general/logo.png" alt="logo" />
       </a>
-      <button type="button" class="header__button" data-menu-button>
-        <svg
-          class="header__menu-icons"
-          width="14"
-          height="14"
-          aria-label="Переключатель меню"
-          aria-controls="nav-wrap"
-          aria-expanded="false"
-          role="img"
-        >
-          <use
-            class="header__icon-close"
-            href="./images/icons/sprite.svg#icon-close"
-          ></use>
-          <use
-            class="header__icon-burger"
-            href="./images/icons/sprite.svg#icon-burger"
-          ></use>
-        </svg>
-      </button>
-      <div class="nav-wrap" id="nav-wrap" data-menu>
-        <nav class="nav">
-          <button type="button" class="nav__button">Buy Now
+      <div class="nav">
+        <button type="button" class="header__button" data-menu-button>
+          <svg
+            class="header__menu-icons"
+            width="14"
+            height="14"
+            aria-label="Переключатель меню"
+            aria-controls="nav-wrap"
+            aria-expanded="false"
+            role="img"
+          >
+            <use
+              class="header__icon-close"
+              href="./images/icons/sprite.svg#icon-close"
+            ></use>
+            <use
+              class="header__icon-burger"
+              href="./images/icons/sprite.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+
+        <nav class="nav-wrap" id="nav-wrap" data-menu>
+          <button type="button" class="nav__button">
+            Buy Now
             <svg class="nav__icon">
               <use href="./images/icons/sprite.svg#icon-bigger"></use>
             </svg>
@@ -49,6 +51,12 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="nav__button--tablet">
+          Buy Now
+          <svg class="nav__icon">
+            <use href="./images/icons/sprite.svg#icon-bigger"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <section class="hero">
@@ -92,15 +100,24 @@
         </p>
         <a href="#">
           <picture>
-            <source srcset="
-                              ./images/general/arrow-right-26.png    1x,
-                              ./images/general/arrow-right-26@2x.png 2x
-                            " media="(min-width: 1200px)" />
-            <source srcset="
-                              ./images/general/arrow-right-18.png    1x,
-                              ./images/general/arrow-right-18@2x.png 2x
-                            " media="(min-width: 768px)" />
-          <img src="./images/general/arrow-right-18.png" alt="Красная стрелка вправо в белом круге">
+            <source
+              srcset="
+                ./images/general/arrow-right-26.png    1x,
+                ./images/general/arrow-right-26@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/general/arrow-right-18.png    1x,
+                ./images/general/arrow-right-18@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              src="./images/general/arrow-right-18.png"
+              alt="Красная стрелка вправо в белом круге"
+            />
           </picture>
         </a>
       </div>
