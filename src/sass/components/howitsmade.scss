@@ -1,16 +1,45 @@
 .howitsmade {
-  padding-top: 125px;
-  // padding-bottom: 97px;
   background-color: $bg-color;
+
+  @include for-size(mobile-tablet) {
+    padding-top: 125px;
+
+    background-image: url('../images/mobile/howitsmade/sectionbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      
+        background-image: url('../images/desktop/howitsmade/sectionbg@2x.png');
+      }
+
+  }
 
   @include for-size(tablet-only) {
     padding-top: 130px;
-    // padding-bottom: 140px;
   }
 
   @include for-size(desktop) {
     padding-top: 125px;
-    // padding-bottom: 140px;
+
+    background-image: url('../images/mobile/howitsmade/sectionbg.png');
+    background-repeat: no-repeat;
+    background-position: 0 342px;
+    background-size: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      
+        background-image: url('../images/desktop/howitsmade/sectionbg@2x.png');
+      }
   }
 }
 
@@ -18,15 +47,20 @@
   display: block;
   text-align: center;
   margin-bottom: 15px;
+  font-family: 'Titan One';
+  text-transform: uppercase;
 
+  @include for-size(mobile-tablet) {
+    @include font(18px, 400, $second-color, 1.17);
+  
+  }
   @include for-size(tablet-only) {
-    font-size: 26px;
-    line-height: 1.15;
+    @include font(26px, 400, $second-color, 1.15);
   }
 
   @include for-size(desktop) {
-    font-size: 30px;
-    line-height: 1.13;
+    @include font(30px, 400, $second-color, 1.13);
+
   }
 }
 
@@ -36,53 +70,30 @@
 
   @include for-size(tablet-only) {
     margin-bottom: 50px;
-    font-size: 48px;
-    line-height: 1.15;
+    @include font(48px, 400, $main-color, 1.15);
   }
 
   @include for-size(desktop) {
     margin-bottom: 55px;
-    font-size: 58px;
-    line-height: 1.13;
+    @include font(58px, 400, $main-color, 1.13);
     letter-spacing: 0.06em;
   }
 }
 
-.background-box {
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @include for-size(mobile-tablet) {
-    background-size: 320px 124px;
-    background-image: url(../images/mobile/howitsmade/sectionbg.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .box {
-        background-image: url(../images/mobile/howitsmade/sectionbg@2x.png);
-      }
-    }
-  }
-  @include for-size(desktop) {
-    background-image: url(../images/desktop/howitsmade/sectionbg.png);
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .box {
-        background-image: url(../images/desktop/howitsmade/sectionbg@2x.png);
-      }
-    }
-  }
-}
-
 .flex-box {
-  @include for-size(tablet) {
+  @include for-size(mobile-tablet) {
+    padding-right: 50px;
+  }
+  
+  @include for-size(tablet-only) {
     display: flex;
+    padding-left: 16px;
+    padding-right: 56px;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    padding: 0 95px;
   }
 }
 
@@ -109,10 +120,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   @include for-size(tablet) {
     width: 340px;
     padding-top: 50px;
   }
+
   @include for-size(desktop) {
     width: 463px;
   }
@@ -185,22 +198,22 @@
 }
 
 .howitsmade__item::before {
-  content: '';
+  content: " ";
   margin-bottom: 16px;
   height: 50px;
   display: block;
-  background-image: url(../images/general/arrow-right-18.png);
+  background-image: url('../images/general/arrow-right-18.png');
   background-repeat: no-repeat;
 }
 
 .howitsmade__item--milk::before {
-  background-image: url(../images/icons/icon721.svg);
+  background-image: url('../images/icons/icon721.svg');
 }
 .howitsmade__item--apple::before {
-  background-image: url(../images/icons/icon16kg.svg);
+  background-image: url('../images/icons/icon16kg.svg');
 }
 .howitsmade__item--heart::before {
-  background-image: url(../images/icons/icon84.svg);
+  background-image: url('../images/icons/icon84.svg');
 }
 
 .howitsmade__title-number {
@@ -237,6 +250,7 @@
     letter-spacing: 0.06em;
   }
 }
+
 .gallery {
   position: relative;
   top: 64px;
