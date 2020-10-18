@@ -59,8 +59,14 @@
   }
 }
 
-.contacts__column:not(:last-child) {
-  @include for-size(mobile-tablet) {
+
+.contacts__column{
+ transition: transform 250ms $timing;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:not(:last-child) {
+     @include for-size(mobile-tablet) {
     margin-bottom: 20px;
   }
 
@@ -71,6 +77,9 @@
   @include for-size(desktop) {
     margin-right: 31px;
   }
+  }
+
+ 
 }
 
 .contacts__item {

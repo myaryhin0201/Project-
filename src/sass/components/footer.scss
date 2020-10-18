@@ -77,6 +77,7 @@
   margin-right: 30px;
 }
 .social-icons__link {
+  transition: transform 250ms $timing, box-shadow 250ms $timing;
   @include flex();
   @include trans(border-radius, 50%);
   @include trans(background-color, $white-color);
@@ -84,6 +85,8 @@
   &:focus {
     @include trans(border-radius, 50%);
     @include trans(background-color, $main-color);
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 .social-icons__icon {
