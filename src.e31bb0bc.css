@@ -2304,6 +2304,8 @@ svg {
 .copyright__line {
   display: block;
   color: #907e82;
+  margin-top: 5px;
+  padding: 5px;
 }
 @media screen and (min-width: 768px) {
   .copyright__line {
