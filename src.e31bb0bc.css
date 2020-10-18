@@ -455,6 +455,10 @@ svg {
   }
 }
 
+.logo:hover, .logo:focus {
+  transform: scale(1.05);
+}
+
 .button, .contacts-block__link--white, .contacts-block__link, .nav__button--tablet, .nav__button, .button--white {
   font-size: 8px;
   font-weight: 400;
@@ -582,6 +586,20 @@ svg {
     display: none;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header__button.is-open {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__button.is-open {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+}
 
 .header__icon-close,
 .header__icon-burger {
@@ -612,6 +630,7 @@ svg {
     background-color: #e17992;
     z-index: 3;
     pointer-events: none;
+    padding-top: 60px;
     opacity: 0;
     transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
@@ -627,16 +646,6 @@ svg {
     transition: visibility 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(0);
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .nav-wrap {
-    padding-top: 85px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .nav-wrap {
-    padding-top: 102px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -701,7 +710,7 @@ svg {
   font-weight: 700;
   color: #d41443;
   line-height: 1.31;
-  padding: 15px 60px;
+  padding: 12px 55px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -709,7 +718,6 @@ svg {
   .nav__button {
     margin-left: 110px;
     margin-bottom: 0;
-    padding: 17px 37px;
   }
 }
 
@@ -859,6 +867,7 @@ svg {
 }
 
 .social-icons__link {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -873,6 +882,8 @@ svg {
   transition: border-radius 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #d41443;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .social-icons__icon {
@@ -992,6 +1003,10 @@ svg {
 .hero-item {
   position: relative;
   text-align: right;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-item:hover, .hero-item:focus {
+  transform: scale(1.05);
 }
 .hero-item:first-child {
   margin-bottom: 14px;
@@ -1161,6 +1176,12 @@ svg {
   }
 }
 
+.contacts__column {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts__column:hover, .contacts__column:focus {
+  transform: scale(1.05);
+}
 @media screen and (max-width: 767px) {
   .contacts__column:not(:last-child) {
     margin-bottom: 20px;
@@ -1586,6 +1607,9 @@ svg {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.feedback__photo:hover, .feedback__photo:focus {
+  transform: scale(1.05);
+}
 @media screen and (min-width: 768px) {
   .feedback__photo {
     margin-bottom: 20px;
@@ -1913,14 +1937,19 @@ svg {
 }
 
 .howitsmade__title-number {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: "Titan One";
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 36px;
   font-weight: 400;
   color: #d41443;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+.howitsmade__title-number:hover, .howitsmade__title-number:focus {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
   .howitsmade__title-number {
@@ -2081,9 +2110,14 @@ svg {
   margin-bottom: 130px;
   padding: 40px 40px;
   padding-top: 160px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__item:last-child {
   margin-bottom: 0;
+}
+.products__item:hover, .products__item:focus {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .products__item--ice-cream {
   background: #ffb8ca;
@@ -2215,6 +2249,7 @@ svg {
 
 .copyright__line {
   display: block;
+  color: #907e82;
 }
 @media screen and (min-width: 768px) {
   .copyright__line {
