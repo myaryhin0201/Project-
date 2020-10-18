@@ -770,17 +770,21 @@ svg {
 }
 @media screen and (min-width: 1280px) {
   .footer__padding {
-    padding: 0 120px;
+    padding: 0 95px;
     padding-bottom: 100px;
   }
 }
 
 .footer__consist {
   font-family: "Titan One";
-  margin-bottom: 45px;
-  max-width: 230px;
+  margin-bottom: 43px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+@media screen and (max-width: 767px) {
+  .footer__consist {
+    padding-right: 46px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__consist {
@@ -816,14 +820,26 @@ svg {
 }
 
 .footer__consist__with {
-  font-size: 34px;
-  line-height: 1.15;
+  font-size: 43px;
+  font-weight: 400;
   color: #d41443;
+  line-height: 1.15;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__consist__with {
     font-size: 48px;
+    font-weight: 400;
+    color: #d41443;
     line-height: 1.15;
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__consist__with {
+    font-size: 58px;
+    font-weight: 400;
+    color: #d41443;
+    line-height: 1.14;
     letter-spacing: 0.06em;
   }
 }
@@ -840,9 +856,20 @@ svg {
   color: #d41443;
   line-height: 1.83;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__contacts {
     font-size: 14px;
+    font-weight: 700;
+    color: #d41443;
+    line-height: 1.86;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__contacts {
+    font-size: 16px;
+    font-weight: 700;
+    color: #d41443;
+    line-height: 1.86;
   }
 }
 
@@ -859,7 +886,12 @@ svg {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin-bottom: 45px;
+  margin-bottom: 46px;
+}
+@media screen and (min-width: 1280px) {
+  .social-icons {
+    margin-bottom: 50px;
+  }
 }
 
 .social-icons__item:not(:last-child) {
@@ -922,15 +954,6 @@ svg {
   margin-bottom: 20px;
 }
 
-.section__desc {
-  font-family: "Titan One";
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffa5ba;
-  line-height: 1.17;
-  text-transform: uppercase;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -960,6 +983,7 @@ svg {
 }
 
 .hero__desc {
+  font-family: "Titan One";
   font-size: 26px;
   font-weight: 400;
   color: #ffffff;
@@ -1148,8 +1172,8 @@ svg {
 @media screen and (max-width: 767px) {
   .contacts {
     bottom: 84px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -1210,13 +1234,13 @@ svg {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts__item {
-    width: 220px;
+    max-width: 220px;
     padding: 50px 31px;
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts__item {
-    width: 330px;
+    max-width: 330px;
     padding: 51px 44px 62px 43px;
   }
 }
@@ -1698,8 +1722,21 @@ svg {
 }
 
 .howitsmade {
-  padding-top: 125px;
   background-color: #fff5f6;
+}
+@media screen and (max-width: 767px) {
+  .howitsmade {
+    padding-top: 125px;
+    background-image: url("/sectionbg.13b8d682.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .howitsmade {
+    background-image: url("/sectionbg@2x.6710abc9.png");
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .howitsmade {
@@ -1709,6 +1746,15 @@ svg {
 @media screen and (min-width: 1280px) {
   .howitsmade {
     padding-top: 125px;
+    background-image: url("/sectionbg.13b8d682.png");
+    background-repeat: no-repeat;
+    background-position: 0 342px;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .howitsmade {
+    background-image: url("/sectionbg@2x.6710abc9.png");
   }
 }
 
@@ -1716,16 +1762,30 @@ svg {
   display: block;
   text-align: center;
   margin-bottom: 15px;
+  font-family: "Titan One";
+  text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .section__desc--howitsmade {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffa5ba;
+    line-height: 1.17;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section__desc--howitsmade {
     font-size: 26px;
+    font-weight: 400;
+    color: #ffa5ba;
     line-height: 1.15;
   }
 }
 @media screen and (min-width: 1280px) {
   .section__desc--howitsmade {
     font-size: 30px;
+    font-weight: 400;
+    color: #ffa5ba;
     line-height: 1.13;
   }
 }
@@ -1738,6 +1798,8 @@ svg {
   .section__title--howitsmade {
     margin-bottom: 50px;
     font-size: 48px;
+    font-weight: 400;
+    color: #d41443;
     line-height: 1.15;
   }
 }
@@ -1745,40 +1807,29 @@ svg {
   .section__title--howitsmade {
     margin-bottom: 55px;
     font-size: 58px;
+    font-weight: 400;
+    color: #d41443;
     line-height: 1.13;
     letter-spacing: 0.06em;
   }
 }
 
-.background-box {
-  background-position: center;
-  background-repeat: no-repeat;
-}
 @media screen and (max-width: 767px) {
-  .background-box {
-    background-size: 320px 124px;
-    background-image: url(/sectionbg.13b8d682.png);
+  .flex-box {
+    padding-right: 50px;
   }
 }
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .background-box .box {
-    background-image: url(/sectionbg@2x.5ec4cece.png);
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .flex-box {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 56px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .background-box {
-    background-image: url(/sectionbg.b69f4689.png);
-  }
-}
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .background-box .box {
-    background-image: url(/sectionbg@2x.6710abc9.png);
-  }
-}
-
-@media screen and (min-width: 768px) {
   .flex-box {
     display: flex;
+    padding: 0 95px;
   }
 }
 
@@ -1916,24 +1967,24 @@ svg {
 }
 
 .howitsmade__item::before {
-  content: "";
+  content: " ";
   margin-bottom: 16px;
   height: 50px;
   display: block;
-  background-image: url(/arrow-right-18.1e597992.png);
+  background-image: url("/arrow-right-18.1e597992.png");
   background-repeat: no-repeat;
 }
 
 .howitsmade__item--milk::before {
-  background-image: url(/icon721.0e4a079d.svg);
+  background-image: url("/icon721.0e4a079d.svg");
 }
 
 .howitsmade__item--apple::before {
-  background-image: url(/icon16kg.e2aac844.svg);
+  background-image: url("/icon16kg.e2aac844.svg");
 }
 
 .howitsmade__item--heart::before {
-  background-image: url(/icon84.86c7eb19.svg);
+  background-image: url("/icon84.86c7eb19.svg");
 }
 
 .howitsmade__title-number {
@@ -2034,7 +2085,7 @@ svg {
 }
 @media screen and (min-width: 1280px) {
   .products__container {
-    padding: 0px 74px;
+    padding: 0px 117px;
   }
 }
 
@@ -2044,9 +2095,7 @@ svg {
   font-size: 18px;
   font-weight: 400;
   color: #ffa5ba;
-  line-height: 116%;
-  font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   text-align: center;
   text-transform: uppercase;
 }
@@ -2055,7 +2104,7 @@ svg {
     font-size: 26px;
     font-weight: 400;
     color: #ffa5ba;
-    line-height: 116%;
+    line-height: 1.16;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -2063,17 +2112,17 @@ svg {
     font-size: 30px;
     font-weight: 400;
     color: #ffa5ba;
-    line-height: 114%;
+    line-height: 1.14;
   }
 }
 
 .products__title {
-  margin-bottom: 140px;
+  margin-bottom: 144px;
   font-family: Titan One;
   font-size: 34px;
   font-weight: 400;
   color: #d41443;
-  line-height: 115%;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -2083,8 +2132,8 @@ svg {
     font-size: 48px;
     font-weight: 400;
     color: #d41443;
-    line-height: 115%;
-    margin-bottom: 160px;
+    line-height: 1.15;
+    margin-bottom: 150px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -2092,9 +2141,9 @@ svg {
     font-size: 58px;
     font-weight: 400;
     color: #d41443;
-    line-height: 114%;
+    line-height: 1.15;
     letter-spacing: 0.06em;
-    margin-bottom: 240px;
+    margin-bottom: 260px;
   }
 }
 
@@ -2152,13 +2201,10 @@ svg {
 
 .products__item-pic {
   position: absolute;
-  /* margin: auto; */
   top: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -45%);
-  /*   display: flex;
-  justify-content: center; */
 }
 @media screen and (min-width: 768px) {
   .products__item-pic {
@@ -2176,6 +2222,11 @@ svg {
   margin-right: auto;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1280px) {
+  .products__item-svg {
+    margin-bottom: 32px;
+  }
+}
 
 .products__item-title {
   margin-bottom: 30px;
@@ -2183,17 +2234,18 @@ svg {
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
-  line-height: 115%;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 @media screen and (min-width: 1280px) {
   .products__item-title {
+    margin-bottom: 32px;
     font-size: 30px;
     font-weight: 400;
     color: #ffffff;
-    line-height: 114%;
+    line-height: 1.13;
   }
 }
 
@@ -2202,24 +2254,26 @@ svg {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-  line-height: 152%;
+  line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
 }
 @media screen and (min-width: 768px) {
   .products__item-text {
+    margin-bottom: 40px;
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 176%;
+    line-height: 1.76;
   }
 }
 @media screen and (min-width: 1280px) {
   .products__item-text {
+    margin-bottom: 62px;
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 176%;
+    line-height: 1.76;
   }
 }
 
