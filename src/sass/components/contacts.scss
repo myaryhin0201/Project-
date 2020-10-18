@@ -35,8 +35,8 @@
   position: relative;
   @include for-size(mobile-tablet) {
     bottom: 84px;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   @include for-size(tablet-only) {
@@ -83,12 +83,12 @@
   }
 
   @include for-size(tablet-only) {
-    width: 220px;
+    max-width: 220px;
     padding: 50px 31px;
   }
 
   @include for-size(desktop) {
-    width: 330px;
+    max-width: 330px;
     padding: 51px 44px 62px 43px;
   }
 }

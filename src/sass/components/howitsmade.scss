@@ -29,7 +29,7 @@
 
     background-image: url('../images/mobile/howitsmade/sectionbg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 342px;
     background-size: 100%;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -81,6 +81,9 @@
 }
 
 .flex-box {
+  @include for-size(mobile-tablet) {
+    padding-right: 50px;
+  }
   
   @include for-size(tablet-only) {
     display: flex;
@@ -117,10 +120,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
   @include for-size(tablet) {
     width: 340px;
     padding-top: 50px;
   }
+
   @include for-size(desktop) {
     width: 463px;
   }
