@@ -102,11 +102,11 @@
   }
 }
 .hero-info {
+  margin-top: 60px;
+  margin-left: 134px;
   @include for-size(mobile-tablet) {
     display: none;
   }
-  margin-top: 60px;
-  margin-left: 134px;
   @include for-size(desktop) {
     margin-top: 100px;
     margin-left: 200px;
