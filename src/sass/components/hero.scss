@@ -16,6 +16,7 @@
   }
 }
 .hero__desc {
+  font-family: 'Titan One';
   @include font(26px, 400, $white-color, 1.15);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -64,7 +65,6 @@
     @include font(46px, 400, $main-color, 1.15);
   }
 }
-
 .hero-item__place {
   display: block;
   @include font(8px, 400, $white-color, 1.25);
