@@ -24,6 +24,10 @@
 .feedback__photo {
   margin: 0 auto;
   margin-bottom: 30px;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
   @include for-size(tablet) {
     margin-bottom: 20px;
   }

@@ -1,0 +1,6 @@
+.logo {
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}

@@ -77,7 +77,6 @@
   }
 }
 .header__button {
-  // position: relative;
   display: inline-flex;
   margin: 0;
   padding: 10px;
@@ -146,12 +145,6 @@
       @include trans(transform, translateX(0));
     }
   }
-  // @include for-size(mobile) {
-  //   padding-top: 85px;
-  // }
-  // @include for-size(tablet-only) {
-  //   padding-top: 102px;
-  // }
   @include for-size(desktop) {
     @include flex($direction: row-reverse, $justcont: space-between);
     flex-grow: 1;
@@ -197,13 +190,12 @@
   display: flex;
   align-items: baseline;
   @include font(16px, 700, $main-color, 1.31);
-  padding: 15px 60px;
+  padding: 12px 55px;
   margin: 0 auto;
   margin-bottom: 20px;
   @include for-size(desktop) {
     margin-left: 110px;
     margin-bottom: 0;
-    padding: 17px 37px;
   }
 }
 .nav__button--tablet {

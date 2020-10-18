@@ -204,8 +204,14 @@
 }
 
 .howitsmade__title-number {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: 'Titan One';
+  transition: transform 250ms $timing;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
   @include font(36px, 400, $main-color, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;

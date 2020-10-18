@@ -1,6 +1,5 @@
 .hero {
   @include flex($direction: column, $ai: start);
-
   @include for-size(mobile-tablet) {
     height: calc(100% - 85px * 2);
   }
@@ -44,6 +43,11 @@
 .hero-item {
   position: relative;
   text-align: right;
+  transition: transform 250ms $timing;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
   &:first-child {
     margin-bottom: 14px;
   }
