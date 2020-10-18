@@ -13,6 +13,8 @@
 .copyright__line {
   display: block;
   color: $second-text-color;
+  margin-top: 5px;
+  padding: 5px;
   @include for-size(tablet) {
     display: inline-block;
   }
