@@ -12,7 +12,7 @@
   }
 }
 .feedback__list {
-  width: 100%;
+  background: black;
 }
 .feedback-list__item {
   margin: 0 auto;
@@ -23,6 +23,9 @@
     max-width: 925px;
   }
 }
+// .slick-active {
+//   margin: 0 auto;
+// }
 .feedback__photo {
   margin: 0 auto;
   margin-bottom: 30px;
