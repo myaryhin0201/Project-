@@ -77,6 +77,7 @@
   }
 }
 .header__button {
+  // position: relative;
   display: inline-flex;
   margin: 0;
   padding: 10px;
@@ -98,6 +99,18 @@
   @include for-size(desktop) {
     & {
       display: none;
+    }
+  }
+  &.is-open {
+    @include for-size(mobile) {
+      position: absolute;
+      top: 13px;
+      right: 15px;
+    }
+    @include for-size(tablet) {
+      position: absolute;
+      top: 13px;
+      right: 15px;
     }
   }
 }
@@ -122,6 +135,7 @@
     background-color: $menu;
     z-index: 3;
     pointer-events: none;
+    padding-top: 60px;
     @include trans(opacity, 0);
     @include trans(visibility, hidden);
     @include trans(transform, translateX(100%));
@@ -132,12 +146,12 @@
       @include trans(transform, translateX(0));
     }
   }
-  @include for-size(mobile) {
-    padding-top: 85px;
-  }
-  @include for-size(tablet-only) {
-    padding-top: 102px;
-  }
+  // @include for-size(mobile) {
+  //   padding-top: 85px;
+  // }
+  // @include for-size(tablet-only) {
+  //   padding-top: 102px;
+  // }
   @include for-size(desktop) {
     @include flex($direction: row-reverse, $justcont: space-between);
     flex-grow: 1;
@@ -169,7 +183,6 @@
 .nav__link {
   display: inline-block;
   @include font(14px, 700, $white-color, 1.28);
-
   &:hover,
   &:focus {
     @include trans(color, $main-color);
