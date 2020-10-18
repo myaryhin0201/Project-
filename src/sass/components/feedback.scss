@@ -11,6 +11,9 @@
     padding-bottom: 235px;
   }
 }
+.feedback__list {
+  width: 100%;
+}
 .feedback-list__item {
   margin: 0 auto;
   @include for-size(tablet) {
@@ -35,9 +38,6 @@
   padding: 43px 60px 26px;
   margin-bottom: 30px;
   background-color: $feedback;
-  // border-bottom: 1px solid #e1e1e1;
-  // border-bottom: 1px dotted #c03;
-  // text-decoration: underline;
   background-image: url('../images/icons/quotes.svg');
   background-repeat: no-repeat;
   background-position: 60px 30px;
@@ -61,7 +61,6 @@
     background-color: aqua;
   }
 }
-
 .feedback-list__item:not(:first-child) {
   text-align: center;
 }
@@ -78,7 +77,6 @@
 .feedback-svg-list__item {
   @include trans(fill, $dots);
 }
-
 .feedback-svg-list__item:hover,
 .feedback-svg-list__item:focus,
 .active {
@@ -93,28 +91,4 @@
 .feedback-person {
   margin-bottom: 30px;
   @include font(14px, 500, $text-color, 1.86);
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
 }
