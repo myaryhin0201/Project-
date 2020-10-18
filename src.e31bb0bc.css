@@ -9,6 +9,7 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 html,
@@ -1627,6 +1628,11 @@ svg {
   width: 100%;
   height: 4px;
   background-color: aqua;
+}
+
+.feedback-text__content {
+  background-image: linear-gradient(180deg, rgba(250, 250, 250, 0) 48.39%, #e1e1e1 48.39%, #e1e1e1 50%, rgba(250, 250, 250, 0) 50%, rgba(250, 250, 250, 0) 98.39%, #e1e1e1 98.39%, #e1e1e1 100%);
+  background-size: 62px 62px;
 }
 
 .feedback-list__item:not(:first-child) {
