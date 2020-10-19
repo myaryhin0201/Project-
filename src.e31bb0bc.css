@@ -450,9 +450,9 @@ svg {
     width: 768px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -500,7 +500,7 @@ svg {
     height: 400px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header {
     height: 666px;
   }
@@ -530,13 +530,13 @@ svg {
     background-size: 124px 126px, 143px 336px, 168px 133px, auto auto;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header__container {
     background-image: url("/milk.d05c0b79.png"), url("/ice-cream.3d37f275.png"), url("/girl.7215419a.png"), url("/pink-circle-desktop.88312ad7.svg");
     background-position: left 20px bottom 45px, right 450px bottom, right 109px bottom, right 267px bottom 75px;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header__container {
     background-image: url("/milk@2x.2636ece4.png"), url("/ice-cream@2x.f117d458.png"), url("/girl@2x.cf1c2171.png"), url("/pink-circle-desktop.88312ad7.svg");
     background-size: 188px 191px, 236px 557px, 293px 232px, auto auto;
@@ -582,7 +582,7 @@ svg {
   opacity: 0;
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .header__button {
     display: none;
   }
@@ -621,7 +621,7 @@ svg {
   align-items: center;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1199px) {
   .nav-wrap {
     position: absolute;
     top: 0;
@@ -649,7 +649,7 @@ svg {
     transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .nav-wrap {
     display: flex;
     flex-direction: row-reverse;
@@ -659,7 +659,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .nav__list {
     display: flex;
     flex-direction: row;
@@ -676,7 +676,7 @@ svg {
 .nav__item:last-child {
   border-bottom: 1px solid #e18298;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .nav__item {
     border: none;
     padding: 15px 0;
@@ -715,7 +715,7 @@ svg {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .nav__button {
     margin-left: 110px;
     margin-bottom: 0;
@@ -732,7 +732,7 @@ svg {
 .nav__button--tablet.active {
   display: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav__button--tablet {
     display: flex;
     align-items: baseline;
@@ -769,7 +769,7 @@ svg {
     padding-bottom: 90px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer__padding {
     padding: 0 95px;
     padding-bottom: 100px;
@@ -794,7 +794,7 @@ svg {
     max-width: 340px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer__consist {
     margin-bottom: 0;
     max-width: 100%;
@@ -814,7 +814,7 @@ svg {
     line-height: 1.15;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer__consist__made {
     font-size: 30px;
     line-height: 1.13;
@@ -827,7 +827,7 @@ svg {
   color: #d41443;
   line-height: 1.15;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__consist__with {
     font-size: 48px;
     font-weight: 400;
@@ -836,7 +836,7 @@ svg {
     letter-spacing: 0.06em;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer__consist__with {
     font-size: 58px;
     font-weight: 400;
@@ -858,7 +858,7 @@ svg {
   color: #d41443;
   line-height: 1.83;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__contacts {
     font-size: 14px;
     font-weight: 700;
@@ -866,7 +866,7 @@ svg {
     line-height: 1.86;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .footer__contacts {
     font-size: 16px;
     font-weight: 700;
@@ -890,7 +890,7 @@ svg {
   align-items: center;
   margin-bottom: 46px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .social-icons {
     margin-bottom: 50px;
   }
@@ -968,6 +968,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .heroice {
+    padding-left: 90px;
+  }
+}
+
 .hero__title {
   font-size: 48px;
   line-height: 0.96;
@@ -978,7 +984,7 @@ svg {
     line-height: 0.9;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 58px;
   }
@@ -1001,7 +1007,7 @@ svg {
     line-height: 1.14;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero__desc {
     font-size: 38px;
     font-weight: 400;
@@ -1013,7 +1019,7 @@ svg {
 .hero__button:not(:last-child) {
   margin-right: 10px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero__button {
     font-size: 14px;
     line-height: 1.28;
@@ -1050,7 +1056,7 @@ svg {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-item__number {
     font-size: 46px;
     font-weight: 400;
@@ -1066,7 +1072,7 @@ svg {
   color: #ffffff;
   line-height: 1.25;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-item__place {
     font-size: 14px;
     font-weight: 400;
@@ -1081,7 +1087,7 @@ svg {
   top: -2px;
   z-index: 1;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-item__icon {
     width: 30px;
     left: 60px;
@@ -1096,7 +1102,7 @@ svg {
   justify-content: space-between;
   align-items: baseline;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-flex {
     margin-top: 84px;
   }
@@ -1110,7 +1116,7 @@ svg {
   color: #ffffff;
   line-height: 1.5;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-info__text {
     width: 200px;
     margin-bottom: 20px;
@@ -1130,7 +1136,7 @@ svg {
     display: none;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero-info {
     margin-top: 100px;
     margin-left: 200px;
@@ -1146,13 +1152,13 @@ svg {
     padding-bottom: 29px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section--contacts {
     padding-top: 0;
     padding-bottom: 87px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .section--contacts {
     padding-top: 0;
     padding-bottom: 63px;
@@ -1162,7 +1168,7 @@ svg {
     background-size: 100%;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section--contacts {
     background-image: url("/sectionbg2 1@2x.08c57c06.png");
   }
@@ -1178,14 +1184,14 @@ svg {
     padding-left: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     bottom: 78px;
     padding-right: 16px;
     padding-left: 16px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     bottom: 102px;
     padding-right: 95px;
@@ -1213,12 +1219,12 @@ svg {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__column:not(:last-child) {
     margin-right: 20px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__column:not(:last-child) {
     margin-right: 31px;
   }
@@ -1246,13 +1252,13 @@ svg {
     max-width: 350px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item {
     max-width: 220px;
     padding: 50px 31px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts__item {
     max-width: 330px;
     padding: 51px 44px 62px 43px;
@@ -1272,12 +1278,12 @@ svg {
     padding-bottom: 25px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-address {
     padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-address {
     padding-bottom: 32px;
   }
@@ -1302,7 +1308,7 @@ svg {
     margin-bottom: 25px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-address__title {
     font-size: 16px;
     font-weight: 500;
@@ -1312,7 +1318,7 @@ svg {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-address__title {
     font-size: 16px;
     font-weight: 500;
@@ -1336,7 +1342,7 @@ svg {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-address__city {
     font-size: 14px;
     font-weight: 500;
@@ -1345,7 +1351,7 @@ svg {
     margin-bottom: 14px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-address__city {
     font-size: 16px;
     font-weight: 500;
@@ -1363,7 +1369,7 @@ svg {
     line-height: 1.5;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-address__text {
     font-size: 14px;
     font-weight: 500;
@@ -1371,7 +1377,7 @@ svg {
     line-height: 1.66;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-address__text {
     font-size: 16px;
     font-weight: 500;
@@ -1389,13 +1395,13 @@ svg {
     padding-bottom: 25px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-work {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-work {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1407,12 +1413,12 @@ svg {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-work__item:not(:last-child) {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-work__item:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1426,7 +1432,7 @@ svg {
     line-height: 1.86;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-work__days {
     font-size: 14px;
     font-weight: 500;
@@ -1434,7 +1440,7 @@ svg {
     line-height: 1.86;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-work__days {
     font-size: 16px;
     font-weight: 500;
@@ -1451,7 +1457,7 @@ svg {
     line-height: 1.86;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-work__time {
     font-size: 14px;
     font-weight: 500;
@@ -1459,7 +1465,7 @@ svg {
     line-height: 1.86;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-work__time {
     font-size: 16px;
     font-weight: 500;
@@ -1473,12 +1479,12 @@ svg {
     padding-top: 25px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-contact {
     padding-top: 30px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-contact {
     padding-top: 32px;
   }
@@ -1492,7 +1498,7 @@ svg {
     line-height: 1.5;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-contact__link {
     font-size: 14px;
     font-weight: 500;
@@ -1500,7 +1506,7 @@ svg {
     line-height: 1.83;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-contact__link {
     font-size: 16px;
     font-weight: 500;
@@ -1519,7 +1525,7 @@ svg {
     max-width: 160px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-block {
     display: flex;
     flex-direction: row;
@@ -1528,7 +1534,7 @@ svg {
     margin-top: 81px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-block {
     display: flex;
     flex-direction: row;
@@ -1553,12 +1559,12 @@ svg {
     margin-bottom: 10px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-block__link {
     padding: 12px 32px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .contacts-block__link {
     padding: 12px 35px;
   }
@@ -1624,7 +1630,7 @@ svg {
     padding-bottom: 200px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .section--feedback {
     padding-top: 380px;
     padding-bottom: 235px;
@@ -1640,7 +1646,7 @@ svg {
     max-width: 620px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .feedback-list__item {
     max-width: 925px;
   }
@@ -1658,7 +1664,7 @@ svg {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .feedback__photo {
     margin-bottom: 15px;
   }
@@ -1680,7 +1686,7 @@ svg {
     background-position: 30px 40px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .feedback-text {
     margin-bottom: 15px;
     padding: 50px 90px 40px;
@@ -1757,12 +1763,12 @@ svg {
     background-image: url("/sectionbg@2x.6710abc9.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .howitsmade {
     padding-top: 130px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .howitsmade {
     padding-top: 125px;
     background-image: url("/sectionbg.b69f4689.png");
@@ -1771,7 +1777,7 @@ svg {
     background-size: 100%;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .howitsmade {
     background-image: url("/sectionbg@2x.6710abc9.png");
   }
@@ -1792,7 +1798,7 @@ svg {
     line-height: 1.17;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section__desc--howitsmade {
     font-size: 26px;
     font-weight: 400;
@@ -1800,7 +1806,7 @@ svg {
     line-height: 1.15;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .section__desc--howitsmade {
     font-size: 30px;
     font-weight: 400;
@@ -1813,7 +1819,7 @@ svg {
   margin-bottom: 26px;
   text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section__title--howitsmade {
     margin-bottom: 50px;
     font-size: 48px;
@@ -1822,7 +1828,7 @@ svg {
     line-height: 1.15;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .section__title--howitsmade {
     margin-bottom: 55px;
     font-size: 58px;
@@ -1838,14 +1844,14 @@ svg {
     padding-right: 50px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .flex-box {
     display: flex;
     padding-left: 16px;
     padding-right: 56px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .flex-box {
     display: flex;
     padding: 0 95px;
@@ -1862,7 +1868,7 @@ svg {
     margin-bottom: 66px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .article {
     margin-bottom: 39px;
   }
@@ -1893,7 +1899,7 @@ svg {
     padding-top: 50px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .article__text-box {
     width: 463px;
   }
@@ -1912,7 +1918,7 @@ svg {
     line-height: 1.76;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .article__paragraph {
     font-size: 16px;
     margin-bottom: 35px;
@@ -1924,7 +1930,7 @@ svg {
   color: #907e82;
   margin-bottom: 22px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .article__paragraph--grey {
     margin-bottom: 25px;
   }
@@ -1933,12 +1939,12 @@ svg {
 .article__paragraph--last-child {
   margin-bottom: 17px;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .article__paragraph--last-child {
     margin-bottom: 62px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .article__paragraph--last-child {
     margin-bottom: 45px;
   }
@@ -1985,7 +1991,7 @@ svg {
     margin-right: 60px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .howitsmade__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -2035,7 +2041,7 @@ svg {
     line-height: 1.14;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .howitsmade__title-number {
     font-size: 58px;
     font-weight: 400;
@@ -2058,7 +2064,7 @@ svg {
     line-height: 1.74;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .howitsmade__list-text {
     font-size: 16px;
     font-weight: 700;
@@ -2077,7 +2083,7 @@ svg {
     top: 150px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .gallery {
     top: 250px;
   }
@@ -2102,7 +2108,7 @@ svg {
     padding-bottom: 112px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__section {
     padding-top: 128px;
     padding-bottom: 120px;
@@ -2117,7 +2123,7 @@ svg {
     padding: 0px 34px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__container {
     padding: 0px 117px;
   }
@@ -2141,7 +2147,7 @@ svg {
     line-height: 1.16;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__text {
     font-size: 30px;
     font-weight: 400;
@@ -2170,7 +2176,7 @@ svg {
     margin-bottom: 150px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__title {
     font-size: 58px;
     font-weight: 400;
@@ -2234,7 +2240,7 @@ svg {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__item {
     margin-right: 24px;
     margin-bottom: 0;
@@ -2258,7 +2264,7 @@ svg {
     transform: translate(-50%, -45%);
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__item-pic {
     transform: translate(-50%, -65%);
   }
@@ -2269,7 +2275,7 @@ svg {
   margin-right: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__item-svg {
     margin-bottom: 32px;
   }
@@ -2286,7 +2292,7 @@ svg {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__item-title {
     margin-bottom: 32px;
     font-size: 30px;
@@ -2320,7 +2326,7 @@ svg {
     line-height: 1.76;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .products__item-text {
     margin-bottom: 62px;
     font-size: 16px;
