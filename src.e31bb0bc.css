@@ -9,7 +9,6 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 html,
