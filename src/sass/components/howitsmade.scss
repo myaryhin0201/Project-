@@ -27,7 +27,7 @@
   @include for-size(desktop) {
     padding-top: 125px;
 
-    background-image: url('../images/mobile/howitsmade/sectionbg.png');
+    background-image: url('../images/desktop/howitsmade/sectionbg.png');
     background-repeat: no-repeat;
     background-position: 0 342px;
     background-size: 100%;
@@ -254,7 +254,7 @@
 .gallery {
   position: relative;
   top: 64px;
-
+ 
   @include for-size(tablet) {
     top: 150px;
   }
