@@ -9,6 +9,7 @@ Use a better box model (opinionated).
 *::after,
 *::before {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 html,
@@ -364,6 +365,7 @@ summary {
 
 body {
   font-family: "DM Sans";
+  overflow-x: hidden;
 }
 body.modal-open {
   overflow: hidden;
@@ -441,7 +443,7 @@ svg {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
-    width: 320px;
+    min-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -783,6 +785,7 @@ svg {
 }
 @media screen and (max-width: 767px) {
   .footer__consist {
+    max-width: 235px;
     padding-right: 46px;
   }
 }
@@ -1221,6 +1224,12 @@ svg {
     margin-right: 31px;
   }
 }
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .contacts__column {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .contacts__item {
   background-color: #ffffff;
@@ -1230,6 +1239,12 @@ svg {
 @media screen and (max-width: 767px) {
   .contacts__item {
     padding: 43px 20px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .contacts__item {
+    text-align: center;
+    max-width: 350px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -1242,6 +1257,11 @@ svg {
   .contacts__item {
     max-width: 330px;
     padding: 51px 44px 62px 43px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .contacts__item {
+    padding: 43px 45px 60px;
   }
 }
 
@@ -1746,7 +1766,7 @@ svg {
 @media screen and (min-width: 1280px) {
   .howitsmade {
     padding-top: 125px;
-    background-image: url("/sectionbg.13b8d682.png");
+    background-image: url("/sectionbg.b69f4689.png");
     background-repeat: no-repeat;
     background-position: 0 342px;
     background-size: 100%;
@@ -1849,6 +1869,12 @@ svg {
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .article__img {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .article__img {
     margin-bottom: 46px;
@@ -2058,6 +2084,15 @@ svg {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .gallery__image {
+    position: relative;
+    width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .products__section {
   padding-top: 120px;
   padding-bottom: 100px;
@@ -2147,6 +2182,13 @@ svg {
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .products__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .products__list {
     display: flex;
@@ -2176,6 +2218,12 @@ svg {
 }
 .products__item--milkshake {
   background: #c2e297;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .products__item {
+    padding-bottom: 100px;
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .products__item {
@@ -2257,6 +2305,12 @@ svg {
   line-height: 1.52;
   text-align: center;
   letter-spacing: 0.04em;
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .products__item-text {
+    max-width: 270px;
+    margin-bottom: 80px;
+  }
 }
 @media screen and (min-width: 768px) {
   .products__item-text {
