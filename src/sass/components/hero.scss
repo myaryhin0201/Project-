@@ -4,7 +4,11 @@
     height: calc(100% - 85px * 2);
   }
 }
-
+.heroice {
+  @include for-size(desktop) {
+    padding-left: 90px;
+  }
+}
 .hero__title {
   font-size: 48px;
   line-height: 0.96;
@@ -16,6 +20,7 @@
     font-size: 58px;
   }
 }
+
 .hero__desc {
   font-family: 'Titan One';
   @include font(26px, 400, $white-color, 1.15);
