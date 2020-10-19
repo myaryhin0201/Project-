@@ -21,6 +21,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   @include for-size(mobile-tablet) {
+    max-width: 235px;
     padding-right: 46px;
   }
   @include for-size(tablet) {

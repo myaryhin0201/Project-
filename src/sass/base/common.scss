@@ -3,6 +3,7 @@ body {
   &.modal-open {
     overflow: hidden;
   }
+  overflow-x: hidden;
 }
 img,
 svg {

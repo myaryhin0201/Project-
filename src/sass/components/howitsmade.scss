@@ -104,6 +104,10 @@
   }
 }
 .article__img {
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
   @include for-size(mobile-tablet) {
     margin-bottom: 46px;
   }
